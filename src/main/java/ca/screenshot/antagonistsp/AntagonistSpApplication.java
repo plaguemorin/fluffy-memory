@@ -2,7 +2,7 @@ package ca.screenshot.antagonistsp;
 
 import ca.screenshot.antagonistsp.repository.Actors;
 import ca.screenshot.antagonistsp.repository.Categories;
-import ca.screenshot.antagonistsp.repository.Items;
+import ca.screenshot.antagonistsp.repository.Descriptors;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -18,7 +18,7 @@ public class AntagonistSpApplication {
     }
 
     @Bean
-    TestBean createTestBean(Items itemRepo, Categories categories, Actors actors) {
+    TestBean createTestBean(Descriptors itemRepo, Categories categories, Actors actors) {
         TestBean b = new TestBean();
         b.setItemsRepository(itemRepo);
         b.setCategoriesRepository(categories);
