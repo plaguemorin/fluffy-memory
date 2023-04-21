@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="layout/default :: head(~{this :: title})">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--/* The element with breadcrumb class will be passed to the header fragment */-->
+<header th:insert="layout/default :: header(~{ :: .breadcrumb})">
+    <ol class="breadcrumb container">
+        <li><a href="#">Home</a></li>
+    </ol>
+</header>
+
+<div th:insert="layout/default :: content(~{ :: .mastery})">
+    <div class="mastery" th:classappen="'mastery-type-' + ${mastery.type.toString().toLowerCase()}" th:id="${mastery.id.toString().toLowerCase()}">
+        <h1 th:text="${mastery.name}">Mastery</h1>
+        <span class="mastery type" th:text="${mastery.type.toString().toLowerCase()}">Type</span>
+        <table>
+            <tr th:each="power : ${mastery.powers}" class="mastery-power">
+                <td th:text="${power.level}">Level</td>
+                <td th:text="${power.name}">Name</td>
+                <td>Range: <span th:text="${power.range.toString().toLowerCase()}"></span></td>
+                <td th:if="${power.obviousness != T(ca.screenshot.antagonistsp.entity.MasteryPower.Obviousness).NONE}">Obviousness: <span th:text="${power.obviousness.toString().toLowerCase()}"></span></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

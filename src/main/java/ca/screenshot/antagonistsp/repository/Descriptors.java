@@ -1,11 +1,10 @@
 package ca.screenshot.antagonistsp.repository;
 
-import ca.screenshot.antagonistsp.entities.Descriptor;
+import ca.screenshot.antagonistsp.entity.Descriptor;
 import org.springframework.data.repository.CrudRepository;
 
-import java.util.List;
+import java.util.UUID;
 
-public interface Descriptors extends CrudRepository<Descriptor, Long> {
-    List<Descriptor> findByCategory(String category);
-    Descriptor findByItemId(long id);
+public interface Descriptors extends CrudRepository<Descriptor, UUID> {
+    Iterable<Descriptor> findByCategory(String category);
 }

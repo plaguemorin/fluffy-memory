@@ -1,25 +1,6 @@
-package ca.screenshot.antagonistsp.entities;
+package ca.screenshot.antagonistsp.service;
 
-import jakarta.persistence.*;
-
-import java.util.List;
-import java.util.Set;
-
-@Entity
-public class Actor {
-    @Id
-    @Column(name = "ACTOR_ID")
-    public int actorId;
-
-    public String name;
-    public String ethnicity;
-    public int age;
-
-    @OneToMany
-    public Set<Descriptor> descriptors;
-
-    public Attributes attributes;
-
+public class Skills {
     public int acrobatics;
     public int athletics;
     public int brutalFighting;
@@ -43,5 +24,4 @@ public class Actor {
     public int medicine;
     public int survival;
     public int technicals;
-
 }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="layout/default :: head(~{this :: title})">
+    <meta charset="UTF-8">
+    <title>Source of power !</title>
+</head>
+<body>
+
+<!--/* The element with breadcrumb class will be passed to the header fragment */-->
+<header th:insert="layout/default :: header(~{ :: .breadcrumb})">
+    <ol class="breadcrumb container">
+        <li><a href="#">Home</a></li>
+    </ol>
+</header>
+
+<div th:insert="layout/default :: content(~{ :: this})">
+<div th:each="source : ${sources}">
+    <div th:id="'sourcepower-' + ${source.id}">
+        <a th:href="'/source/' + ${source.id}" th:text="${source.name}">Source Name</a>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

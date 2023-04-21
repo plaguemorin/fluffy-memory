@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Power</title>
+</head>
+<body>
+
+<div th:id="'sourcepower-' + ${source.id}">
+    <h1 class="source-power-name" th:text="${source.name}">Power Name</h1>
+    <div class="mastery-group" th:each="sourceofpower : ${source.masteryGroups}" th:id="${sourceofpower.id}">
+
+        <!-- Each selectable group -->
+        <div th:each="entry : ${sourceofpower.powers}" class="mastery"
+             th:id="'mastery-' + ${entry.key.id}"
+             th:classappend="'mastery-type-' + ${entry.key.type.toString().toLowerCase()}">
+            <div class="mastery name"><a th:href="'/mastery/' + ${entry.key.id.toString()}" th:text="${entry.key.name}">Mastery Name</a></div>
+            <div class="power" th:each="power : ${entry.value}"
+                 th:classappend="'power-level-' + ${power.level} + ' power-obviousness-' + ${power.obviousness.toString().toLowerCase()} + ' power-duration-' + ${power.duration.toString().toLowerCase()} + ' power-range-' + ${power.range.toString().toLowerCase()}">
+                <span class="power-level" th:text="'(' + ${power.level} + ')'">(0)</span>
+                <a th:href="'/power/' + ${power.id.toString()}" th:text="${power.name}">Power Link</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

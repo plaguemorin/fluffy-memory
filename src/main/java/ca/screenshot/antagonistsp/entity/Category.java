@@ -1,4 +1,4 @@
-package ca.screenshot.antagonistsp.entities;
+package ca.screenshot.antagonistsp.entity;
 
 import jakarta.persistence.*;
 
