@@ -7,4 +7,6 @@ import java.util.UUID;
 
 public interface Descriptors extends CrudRepository<Descriptor, UUID> {
     Iterable<Descriptor> findByCategory(String category);
+
+    Descriptor findByName(String descriptorName);
 }

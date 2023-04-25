@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.UUID;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -94,7 +95,6 @@ public class TestBean {
                 new MasteryPower("8b1a1aed-13c0-4237-95b7-2e956c1fe4ac", 3, "The Dark Half", MasteryPower.Obviousness.HIGH, MasteryPower.Range.SELF, MasteryPower.Duration.ENCOUNTER),
                 new MasteryPower("1b5fd277-804a-48d4-bbee-3b3d0af70bb8", 4, "Body Ivory", MasteryPower.Obviousness.HIGH, MasteryPower.Range.SELF, MasteryPower.Duration.ENCOUNTER),
                 new MasteryPower("b9e5d239-d97d-4165-b3d8-356ee4425ccb", 5, "Monstrous Form", MasteryPower.Obviousness.HIGH, MasteryPower.Range.SELF, MasteryPower.Duration.PERMANENT)
-                //new MasteryPower("4355c6a2-2b32-4cf0-89c8-2012ccdd7bb9", 5, "Abberation", )
         ).collect(Collectors.toSet())));
         masteriesRepository.save(new Mastery("60f77f5e-6c61-4e2c-92ed-0b1f2922e05c", "Thanatology", Mastery.Type.MAJOR, Stream.of(
                 new MasteryPower("21b045ce-ea8f-4556-b404-161792ef2484", 1, "Chemicals", MasteryPower.Obviousness.LOW, MasteryPower.Range.LINE_OF_SIGHT),
@@ -486,7 +486,7 @@ public class TestBean {
                 new Descriptor(categoryGeneralPhysical, "One Eyes", -2, 0, 0, 0, -1, 0, 0, -1, 0, 0),
                 new Descriptor(categoryGeneralPhysical, "Overweight", 0, 1, 0, -1, 0, 0, 0, 0, 0, 5),
                 new Descriptor(categoryGeneralPhysical, "Plump", -2, 0, 0, -1, 0, -1, 0, 0, 0, 5),
-                new Descriptor(categoryGeneralPhysical, "Puni", -4, -2, -2, 0, 0, 0, 0, 0, 0, -3),
+                new Descriptor(categoryGeneralPhysical, "Puny", -4, -2, -2, 0, 0, 0, 0, 0, 0, -3),
                 new Descriptor(categoryGeneralPhysical, "Quick", 1, 0, 0, 0, 0, 1, 0, 0, 0, 0),
                 new Descriptor(categoryGeneralPhysical, "Quick Reflexes", 2, 0, 0, 0, 0, 2, 0, 0, 0, 0),
                 new Descriptor(categoryGeneralPhysical, "Rickety", -4, -2, -2, 0, 0, 0, 0, 0, 0, -5),
@@ -513,7 +513,7 @@ public class TestBean {
                 new Descriptor(categoryGeneralPhysical, "Unattractive Appearance", -1, 0, 0, 0, 0, 0, 0, -1, 0, 0),
                 new Descriptor(categoryGeneralPhysical, "Uncouth", -1, 0, 0, 0, 0, 0, 0, -1, 0, 0),
                 new Descriptor(categoryGeneralPhysical, "Underfed", -3, -2, -1, 0, 0, 0, 0, 0, 0, -3),
-                new Descriptor(categoryGeneralPhysical, "Underwight", -2, 0, -2, 0, 0, 0, 0, 0, 0, -1),
+                new Descriptor(categoryGeneralPhysical, "Underweight", -2, 0, -2, 0, 0, 0, 0, 0, 0, -1),
                 new Descriptor(categoryGeneralPhysical, "Unsporty", -1, -1, 0, 0, 0, 0, 0, 0, 0, 0),
                 new Descriptor(categoryGeneralPhysical, "Unsteady Hands", -1, 0, 0, -1, 0, 0, 0, 0, 0, 0),
                 new Descriptor(categoryGeneralPhysical, "Very Hairy", -1, 0, 0, 0, 0, 0, 0, -1, 0, 0),
@@ -542,8 +542,7 @@ public class TestBean {
                 new Descriptor(categoryGeneralMental, "Intellectual", 2, 0, 0, 0, 0, 0, 2, 0, 0, 0),
                 new Descriptor(categoryGeneralMental, "Intuitive", 2, 0, 0, 0, 0, 2, 0, 0, 0, 0),
                 new Descriptor(categoryGeneralMental, "Inventive", 2, 0, 0, 0, 0, 1, 1, 0, 0, 0),
-                new Descriptor(categoryGeneralMental, "Lazy", -1, 0, 0, 0, 0, -1, 0, 0, 0, 1),
-                new Descriptor(categoryGeneralMental, "Methodical", 2, 0, 0, 0, 0, 1, 1, 0, 0, 0),
+                new Descriptor(categoryGeneralMental, "Logic", 1, 0, 0, 0, 0, 0, 1, 0, 0, 0),
                 new Descriptor(categoryGeneralMental, "Lazy", -1, 0, 0, 0, 0, -1, 0, 0, 0, 1),
                 new Descriptor(categoryGeneralMental, "Methodical", 2, 0, 0, 0, 1, 0, 1, 0, 0, 0),
                 new Descriptor(categoryGeneralMental, "Moronic", -2, 0, 0, 0, 0, 0, -2, 0, 0, 0),
@@ -608,5 +607,21 @@ public class TestBean {
                 new Descriptor(categoryGeneralSocial, "Vitiligo", -1, 0, 0, 0, 0, 0, 0, -1, 0, 0)
         ).toList());
 
+        Actor alexTerrieur = new Actor();
+        alexTerrieur.id = UUID.randomUUID();
+        alexTerrieur.name = "Alex Terrieur";
+        alexTerrieur.age = 33;
+        alexTerrieur.ethnicity = "QC";
+
+        alexTerrieur.addDescriptor(descriptorsRepository.findByName("Mature"));
+        alexTerrieur.addDescriptor(descriptorsRepository.findByName("Quiet"));
+        alexTerrieur.addDescriptor(descriptorsRepository.findByName("Fast Learner"));
+        alexTerrieur.addDescriptor(descriptorsRepository.findByName("Jogger"));
+
+        alexTerrieur.power = sourceOfPowersRepository.findByName("World Walkers");
+        alexTerrieur.addPower(masteryPowersRepository.findByName("Hide in the Gloom"));
+        alexTerrieur.addPower(masteryPowersRepository.findByName("Walk the Gloom"));
+
+        actorsRepository.save(alexTerrieur);
     }
 }

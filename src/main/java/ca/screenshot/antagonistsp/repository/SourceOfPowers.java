@@ -6,4 +6,5 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.UUID;
 
 public interface SourceOfPowers extends CrudRepository<SourceOfPower, UUID> {
+    SourceOfPower findByName(String name);
 }

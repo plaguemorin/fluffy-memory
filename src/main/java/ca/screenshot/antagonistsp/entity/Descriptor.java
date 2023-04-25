@@ -15,7 +15,7 @@ public class Descriptor {
     public String name;
     public int cost;
 
-    @OneToOne(cascade = CascadeType.ALL, mappedBy = "descriptor")
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "descriptor")
     public DescriptorAttributes attributes;
 
     public Descriptor() {

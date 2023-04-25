@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="layout/default :: head(~{this :: title})">
+    <meta charset="UTF-8">
+    <title>Actors !</title>
+</head>
+<body>
+
+<!--/* The element with breadcrumb class will be passed to the header fragment */-->
+<header th:insert="layout/default :: header(~{ :: .breadcrumb})">
+    <ol class="breadcrumb container">
+        <li><a href="#">Home</a></li>
+    </ol>
+</header>
+
+<div th:insert="layout/default :: content(~{ :: .actor })">
+<div class="actor">
+    <h1 th:text="${actor.name}">Actor name</h1>
+    <div class="power" th:id="${actor.power.id}">
+        <a href="/source/" th:href="'/source/' + ${actor.power.id}" th:text="${actor.power.name}">Source name</a>
+    </div>
+
+    <div class="masteries">
+        <div class="mastery" th:each="e : ${T(ca.screenshot.antagonistsp.utils.MasteryPowerViewUtil).OrderPowersByPowers(actor.powers)}">
+            <h2 th:text="${e.key.name}" th:id="'mastery_' + ${e.key.id}">Mastery</h2>
+            <div th:each="p : ${e.value}"><a href="/source/" th:href="'/source/' + ${p.id}" th:text="${p.name}"> Power</a></div>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Cost</th>
+            <th>Attributes</th>
+        </tr>
+
+        <tr th:each="desc : ${actor.descriptors}">
+            <th th:text="${desc.name}">Name</th>
+            <td th:text="${desc.category.name}">Category</td>
+            <td th:text="${desc.cost}">Cost</td>
+            <td th:text="${desc.attributes.attributes}">Attributes</td>
+        </tr>
+    </table>
+</div>
+</div>
+
+</body>
+</html>

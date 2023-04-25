@@ -2,7 +2,7 @@
 <html lang="en">
 <head th:replace="layout/default :: head(~{this :: title})">
     <meta charset="UTF-8">
-    <title>Source of power !</title>
+    <title>Actors !</title>
 </head>
 <body>
 
@@ -13,10 +13,10 @@
     </ol>
 </header>
 
-<div th:insert="layout/default :: content(~{ :: .sourcepowers })">
-<div class="sourcepowers" th:each="source : ${sources}">
-    <div th:id="'sourcepower-' + ${source.id}">
-        <a th:href="'/source/' + ${source.id}" th:text="${source.name}">Source Name</a>
+<div th:insert="layout/default :: content(~{ :: .actors })">
+<div class="actors" th:each="actor : ${actors}">
+    <div th:id="'actor-' + ${actor.id}">
+        <a th:href="'/actor/' + ${actor.id}" th:text="${actor.name}">Actor Name</a>
     </div>
 </div>
 </div>
