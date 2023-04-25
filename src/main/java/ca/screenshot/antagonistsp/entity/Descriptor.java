@@ -19,16 +19,30 @@ public class Descriptor {
     public DescriptorAttributes attributes;
 
     public Descriptor() {
-        this.descriptorId = UUID.randomUUID();
         this.attributes = new DescriptorAttributes(this);
+
+        this.attributes.setStrength(0);
+        this.attributes.setConstitution(0);
+        this.attributes.setAgility(0);
+        this.attributes.setPerception(0);
+        this.attributes.setReflex(0);
+        this.attributes.setIntelligence(0);
+        this.attributes.setCharisma(0);
+        this.attributes.setHeight(0);
+        this.attributes.setWeight(0);
     }
 
-    public Descriptor(Category category, String name, int cost, int modStr, int modCon, int modAgi, int modPer, int modRef, int modInt, int modCha, int modHeight, int modWeight) {
+    public Descriptor(Category category, String name, int cost) {
         this();
+        this.descriptorId = UUID.randomUUID();
 
         this.category = category;
         this.name = name;
         this.cost = cost;
+    }
+
+    public Descriptor(Category category, String name, int cost, int modStr, int modCon, int modAgi, int modPer, int modRef, int modInt, int modCha, int modHeight, int modWeight) {
+        this(category, name, cost);
 
         this.attributes.setStrength(modStr);
         this.attributes.setConstitution(modCon);

@@ -2,9 +2,7 @@ package ca.screenshot.antagonistsp.entity;
 
 import jakarta.persistence.*;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 
 @Entity
 public class Actor {
@@ -28,10 +26,14 @@ public class Actor {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "actor")
     public Set<ActorMasteryPower> powers;
 
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "actor")
+    public List<ActorQuestLogItem> logItems;
+
     public Actor() {
         this.powers = new HashSet<>();
         this.descriptors = new HashSet<>();
         this.actorSkill = new ActorSkill();
+        this.logItems = new ArrayList<>();
     }
 
     public void addDescriptor(Descriptor descriptor) {
@@ -54,5 +56,16 @@ public class Actor {
         actorMasteryPower.power = power;
 
         this.powers.add(actorMasteryPower);
+    }
+
+    public void addQuestLog(String desc, int xpDiff) {
+        ActorQuestLogItem questLogItem = new ActorQuestLogItem();
+        questLogItem.id = UUID.randomUUID();
+        questLogItem.actor = this;
+        questLogItem.displayOrder = this.logItems.size() + 1;
+        questLogItem.description = desc;
+        questLogItem.xp = xpDiff;
+
+        this.logItems.add(questLogItem);
     }
 }

@@ -19,12 +19,17 @@
 <div th:insert="layout/default :: content(~{ :: .actor })">
     <div class="actor">
         <h1 th:text="${actor.displayName}">Actor name</h1>
+
         <div class="cost">
             <span>Total cost of character:</span>
             <span th:text="${actor.totalCost}">0</span>
         </div>
 
+        <div th:replace="fragments/attributes :: attributes(${actor.attributes})"></div>
+
         <div class="identity">
+            <h2>Identity</h2>
+
             <div class="ethnicity">
                 <span>Ethnicity: </span>
                 <span>ETHNICITY</span>
@@ -45,6 +50,8 @@
         </div>
 
         <div class="attributes">
+            <h2>Attributes</h2>
+
             <div class="gender">
                 <span>Gender: </span>
                 <span>G</span>
@@ -68,26 +75,30 @@
         </div>
 
         <div class="masteries">
+            <h2>Masteries</h2>
             <div class="mastery" th:each="e : ${actor.powers}">
-                <h2 th:text="${e.mastery.name}" th:id="'mastery_' + ${e.mastery.id}">Mastery</h2>
+                <h3 th:text="${e.mastery.name}" th:id="'mastery_' + ${e.mastery.id}">Mastery</h3>
                 <span class="max_mastery_level" th:text="${e.level}">0</span>
                 <div th:each="p : ${e.powers}"><a href="/source/" th:href="'/source/' + ${p.id}" th:text="${p.name}">
                     Power</a></div>
             </div>
         </div>
 
-        <!--
-        <table class="table">
+        <div th:replace="fragments/skills :: skill(${actor.skillsLevel}, ${actor.skills})"></div>
+
+        <div class="log">
+            <h2>Quest Log</h2>
+            <table class="table">
                 <tr class="table-header">
-                    <th>Name</th>
-                    <th>Category</th>
-                    <th>Cost</th>
-                    <th>Attributes</th>
+                    <th>Description</th>
+                    <th>XP</th>
+                </tr>
+                <tr th:each="log : ${actor.logs}">
+                    <td th:text="${log.display}">Something</td>
+                    <td th:text="${log.xp}">0</td>
                 </tr>
             </table>
-            -->
-
-        <th:block th:replace="fragments/skills :: skill(${actor.skillsLevel}, ${actor.skills})"/>
+        </div>
     </div>
 </div>
 

@@ -6,122 +6,125 @@
 </head>
 <body>
 
+<div class="skill" th:fragment="skill(levels, skill)">
+    <h2>Skills</h2>
 
-<table class="skill table" th:fragment="skill(levels, skill)">
-  <tr class="table-header">
-    <th scope="col">Category</th>
-    <th scope="col">Skill</th>
-    <th scope="col">Level</th>
-    <th scope="col">Rating</th>
-  </tr>
-  <tr class="skill-physical">
-    <th rowspan="5" class="row-header">Physical</th>
-    <td>Acrobatics</td>
-    <td th:text="${levels.acrobatics}">0</td>
-    <td th:text="${skill.acrobatics}">0</td>
-  </tr>
-  <tr class="skill-physical">
-    <td>Athletics</td>
-    <td th:text="${levels.athletics}">0</td>
-    <td th:text="${skill.athletics}">0</td>
-  </tr>
-  <tr class="skill-physical">
-    <td>Brutal Fighting</td>
-    <td th:text="${levels.brutalFighting}">0</td>
-    <td th:text="${skill.brutalFighting}">0</td>
-  </tr>
-  <tr class="skill-physical">
-    <td>Finesse Fighting</td>
-    <td th:text="${levels.finesseFighting}">0</td>
-    <td th:text="${skill.finesseFighting}">0</td>
-  </tr>
-  <tr class="skill-physical">
-    <td>Muscular</td>
-    <td th:text="${levels.muscular}">0</td>
-    <td th:text="${skill.muscular}">0</td>
-  </tr>
+    <table class="table">
+        <tr class="table-header">
+            <th scope="col">Category</th>
+            <th scope="col">Skill</th>
+            <th scope="col">Level</th>
+            <th scope="col">Rating</th>
+        </tr>
+        <tr class="skill-physical">
+            <th rowspan="5" class="row-header">Physical</th>
+            <td>Acrobatics</td>
+            <td th:text="${levels.acrobatics}">0</td>
+            <td th:text="${skill.acrobatics}">0</td>
+        </tr>
+        <tr class="skill-physical">
+            <td>Athletics</td>
+            <td th:text="${levels.athletics}">0</td>
+            <td th:text="${skill.athletics}">0</td>
+        </tr>
+        <tr class="skill-physical">
+            <td>Brutal Fighting</td>
+            <td th:text="${levels.brutalFighting}">0</td>
+            <td th:text="${skill.brutalFighting}">0</td>
+        </tr>
+        <tr class="skill-physical">
+            <td>Finesse Fighting</td>
+            <td th:text="${levels.finesseFighting}">0</td>
+            <td th:text="${skill.finesseFighting}">0</td>
+        </tr>
+        <tr class="skill-physical">
+            <td>Muscular</td>
+            <td th:text="${levels.muscular}">0</td>
+            <td th:text="${skill.muscular}">0</td>
+        </tr>
 
-  <tr class="skill-action">
-    <th rowspan="5" class="row-header">Action</th>
-    <td>Drive</td>
-    <td th:text="${levels.drive}"></td>
-    <td th:text="${skill.drive}"></td>
-  </tr>
-  <tr class="skill-action">
-    <td>Long Arms</td>
-    <td th:text="${levels.longArms}"></td>
-    <td th:text="${skill.longArms}"></td>
-  </tr>
-  <tr class="skill-action">
-    <td>Sleight of Hands</td>
-    <td th:text="${levels.sleightOfHands}"></td>
-    <td th:text="${skill.sleightOfHands}"></td>
-  </tr>
-  <tr class="skill-action">
-    <td>Small Arms</td>
-    <td th:text="${levels.smallArms}"></td>
-    <td th:text="${skill.smallArms}"></td>
-  </tr>
-  <tr class="skill-action">
-    <td>Stealth</td>
-    <td th:text="${levels.stealth}"></td>
-    <td th:text="${skill.stealth}"></td>
-  </tr>
+        <tr class="skill-action">
+            <th rowspan="5" class="row-header">Action</th>
+            <td>Drive</td>
+            <td th:text="${levels.drive}"></td>
+            <td th:text="${skill.drive}"></td>
+        </tr>
+        <tr class="skill-action">
+            <td>Long Arms</td>
+            <td th:text="${levels.longArms}"></td>
+            <td th:text="${skill.longArms}"></td>
+        </tr>
+        <tr class="skill-action">
+            <td>Sleight of Hands</td>
+            <td th:text="${levels.sleightOfHands}"></td>
+            <td th:text="${skill.sleightOfHands}"></td>
+        </tr>
+        <tr class="skill-action">
+            <td>Small Arms</td>
+            <td th:text="${levels.smallArms}"></td>
+            <td th:text="${skill.smallArms}"></td>
+        </tr>
+        <tr class="skill-action">
+            <td>Stealth</td>
+            <td th:text="${levels.stealth}"></td>
+            <td th:text="${skill.stealth}"></td>
+        </tr>
 
-  <tr class="skill-social">
-    <th rowspan="5" class="row-header">Social</th>
-    <td>Charm</td>
-    <td th:text="${levels.charm}"></td>
-    <td th:text="${skill.charm}"></td>
-  </tr>
-  <tr class="skill-social">
-    <td>Deception</td>
-    <td th:text="${levels.deception}"></td>
-    <td th:text="${skill.deception}"></td>
-  </tr>
-  <tr class="skill-social">
-    <td>Insight</td>
-    <td th:text="${levels.insight}"></td>
-    <td th:text="${skill.insight}"></td>
-  </tr>
-  <tr class="skill-social">
-    <td>Intimidate</td>
-    <td th:text="${levels.intimidate}"></td>
-    <td th:text="${skill.intimidate}"></td>
-  </tr>
-  <tr class="skill-social">
-    <td>Persuade</td>
-    <td th:text="${levels.persuade}"></td>
-    <td th:text="${skill.persuade}"></td>
-  </tr>
+        <tr class="skill-social">
+            <th rowspan="5" class="row-header">Social</th>
+            <td>Charm</td>
+            <td th:text="${levels.charm}"></td>
+            <td th:text="${skill.charm}"></td>
+        </tr>
+        <tr class="skill-social">
+            <td>Deception</td>
+            <td th:text="${levels.deception}"></td>
+            <td th:text="${skill.deception}"></td>
+        </tr>
+        <tr class="skill-social">
+            <td>Insight</td>
+            <td th:text="${levels.insight}"></td>
+            <td th:text="${skill.insight}"></td>
+        </tr>
+        <tr class="skill-social">
+            <td>Intimidate</td>
+            <td th:text="${levels.intimidate}"></td>
+            <td th:text="${skill.intimidate}"></td>
+        </tr>
+        <tr class="skill-social">
+            <td>Persuade</td>
+            <td th:text="${levels.persuade}"></td>
+            <td th:text="${skill.persuade}"></td>
+        </tr>
 
-  <tr class="skill-medical">
-    <th rowspan="5" class="row-header">Social</th>
-    <td>Investigate</td>
-    <td th:text="${levels.investigate}"></td>
-    <td th:text="${skill.investigate}"></td>
-  </tr>
-  <tr class="skill-medical">
-    <td>Knowledge</td>
-    <td th:text="${levels.knowledge}"></td>
-    <td th:text="${skill.knowledge}"></td>
-  </tr>
-  <tr class="skill-medical">
-    <td>Medicine</td>
-    <td th:text="${levels.medicine}"></td>
-    <td th:text="${skill.medicine}"></td>
-  </tr>
-  <tr class="skill-medical">
-    <td>Survival</td>
-    <td th:text="${levels.survival}"></td>
-    <td th:text="${skill.survival}"></td>
-  </tr>
-  <tr class="skill-medical">
-    <td>Technical</td>
-    <td th:text="${levels.technical}"></td>
-    <td th:text="${skill.technical}"></td>
-  </tr>
-</table>
+        <tr class="skill-medical">
+            <th rowspan="5" class="row-header">Social</th>
+            <td>Investigate</td>
+            <td th:text="${levels.investigate}"></td>
+            <td th:text="${skill.investigate}"></td>
+        </tr>
+        <tr class="skill-medical">
+            <td>Knowledge</td>
+            <td th:text="${levels.knowledge}"></td>
+            <td th:text="${skill.knowledge}"></td>
+        </tr>
+        <tr class="skill-medical">
+            <td>Medicine</td>
+            <td th:text="${levels.medicine}"></td>
+            <td th:text="${skill.medicine}"></td>
+        </tr>
+        <tr class="skill-medical">
+            <td>Survival</td>
+            <td th:text="${levels.survival}"></td>
+            <td th:text="${skill.survival}"></td>
+        </tr>
+        <tr class="skill-medical">
+            <td>Technical</td>
+            <td th:text="${levels.technical}"></td>
+            <td th:text="${skill.technical}"></td>
+        </tr>
+    </table>
+</div>
 
 </body>
 </html>

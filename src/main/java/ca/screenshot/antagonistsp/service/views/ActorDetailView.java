@@ -17,6 +17,8 @@ public class ActorDetailView {
     public List<Modifier> quirksTalents;
     public List<Modifier> quirksFlaws;
     public List<Modifier> characterDescriptors;
+    public List<QuestLog> logs;
 
     public int totalCost;
+    public int availableXp;
 }

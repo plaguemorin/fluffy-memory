@@ -131,6 +131,22 @@ public class ActorView {
             ret.characterDescriptors = new ArrayList<>();
             ret.handiness = new Modifier();
 
+            ret.attributes.weight = ret.attributes.height = 20;
+
+            ret.availableXp = actor.logItems.stream()
+                    .map(actorQuestLogItem -> actorQuestLogItem.xp)
+                    .reduce(0, Integer::sum);
+
+            ret.logs = actor.logItems.stream()
+                    .sorted(Comparator.comparingInt(o -> o.displayOrder))
+                    .map(actorQuestLogItem -> {
+                        QuestLog questLog = new QuestLog();
+                        questLog.xp = actorQuestLogItem.xp;
+                        questLog.display = actorQuestLogItem.description;
+                        return questLog;
+                    })
+                    .toList();
+
             Category categoryAge = repositoryCategories.findByName("Age");
             Category categorySize = repositoryCategories.findByName("Size");
             Category categoryHandiness = repositoryCategories.findByName("Handiness");
@@ -150,9 +166,9 @@ public class ActorView {
                 }
             }
 
-            ActorSkill actorSkill = actor.actorSkill;
-            ret.skillsLevel = MakeSkills(actorSkill);
+            ret.skillsLevel = MakeSkills(actor.actorSkill);
             ret.skills = MakeSkills(ret.attributes, ret.skillsLevel);
+
 
             ret.powers = actor.powers.stream().collect(
                             Collectors.groupingBy(actorMasteryPower1 -> actorMasteryPower1.power.parent))
