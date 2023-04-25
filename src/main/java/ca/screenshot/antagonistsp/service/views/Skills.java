@@ -1,4 +1,4 @@
-package ca.screenshot.antagonistsp.service;
+package ca.screenshot.antagonistsp.service.views;
 
 public class Skills {
     public int acrobatics;
@@ -23,5 +23,5 @@ public class Skills {
     public int knowledge;
     public int medicine;
     public int survival;
-    public int technicals;
+    public int technical;
 }

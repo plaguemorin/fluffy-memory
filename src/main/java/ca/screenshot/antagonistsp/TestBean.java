@@ -410,15 +410,22 @@ public class TestBean {
                 new SourceOfPowerMasteryGroup(masteryPowersRepository.findAllByParentName("Unfold"))
         ).collect(Collectors.toSet())));
 
+        Category topCategoryQuirks = categoriesRepository.save(new Category(null, "Quirks"));
         Category topCategoryAge = categoriesRepository.save(new Category(null, "Age"));
-        Category topCategoryGeneral = categoriesRepository.save(new Category(null, "General Descriptors"));
         Category topCategorySize = categoriesRepository.save(new Category(null, "Size"));
+        Category topCategoryGeneral = categoriesRepository.save(new Category(null, "General Descriptors"));
+
+        Category topCategoryHandeness = categoriesRepository.save(new Category(topCategoryQuirks, "Handiness"));
 
         Category categoryGeneralMental = categoriesRepository.save(new Category(topCategoryGeneral, "Mental"));
         Category categoryGeneralPhysical = categoriesRepository.save(new Category(topCategoryGeneral, "Physical"));
         Category categoryGeneralSocial = categoriesRepository.save(new Category(topCategoryGeneral, "Social"));
 
         descriptorsRepository.saveAll(Stream.of(
+                new Descriptor(topCategoryHandeness, "Left Handed", 0, 0, 0, 0,0, 0, 0, 0, 0, 0),
+                new Descriptor(topCategoryHandeness, "Right Handed", 0, 0, 0, 0,0, 0, 0, 0, 0, 0),
+                new Descriptor(topCategoryHandeness, "Ambidexterity", 1, 0, 0, 0,0, 0, 0, 0, 0, 0),
+
                 new Descriptor(topCategoryAge, "Child", -2, -1, -1, 0, 0, 0, 0, 0, -4, -4),
                 new Descriptor(topCategoryAge, "Young", -1, 0, -1, 0, 0, 0, 0, 0, -2, -2),
                 new Descriptor(topCategoryAge, "Adult", 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
@@ -426,6 +433,7 @@ public class TestBean {
                 new Descriptor(topCategoryAge, "Old", 0, 0, -1, 0, 0, 0, 1, 0, -1, 0),
                 new Descriptor(topCategoryAge, "Senior", 1, 0, -1, 0, 0, 0, 2, 0, -1, -2),
                 new Descriptor(topCategoryAge, "Venerable", -1, -1, -1, 0, 0, 0, 1, 0, -1, -2),
+
                 new Descriptor(topCategorySize, "Small", 0, 0, -1, 0, 0, 0, 0, 0, -2, -2),
                 new Descriptor(topCategorySize, "Short", -1, 0, -1, 0, 0, 0, 0, 0, 0, -1),
                 new Descriptor(topCategorySize, "Medium", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0),
@@ -436,6 +444,7 @@ public class TestBean {
                 new Descriptor(topCategorySize, "Very Tall", 2, 1, 1, 0, 0, 0, 0, 0, 3, 3),
                 new Descriptor(topCategorySize, "Giant", 1, 2, 1, -2, 0, 0, 0, 0, 4, 4),
                 new Descriptor(topCategorySize, "Gigantic", 2, 3, 1, -2, 0, 0, 0, 0, 5, 5),
+
                 new Descriptor(categoryGeneralPhysical, "Acute Hearing", 1, 0, 0, 0, 1, 0, 0, 0, 0, 0),
                 new Descriptor(categoryGeneralPhysical, "Acute Taste and Smell", 1, 0, 0, 0, 1, 0, 0, 0, 0, 0),
                 new Descriptor(categoryGeneralPhysical, "Acute Vision", 1, 0, 0, 0, 1, 0, 0, 0, 0, 0),
@@ -617,10 +626,23 @@ public class TestBean {
         alexTerrieur.addDescriptor(descriptorsRepository.findByName("Quiet"));
         alexTerrieur.addDescriptor(descriptorsRepository.findByName("Fast Learner"));
         alexTerrieur.addDescriptor(descriptorsRepository.findByName("Jogger"));
+        alexTerrieur.addDescriptor(descriptorsRepository.findByName("Medium"));
+        alexTerrieur.addDescriptor(descriptorsRepository.findByName("Right Handed"));
 
         alexTerrieur.power = sourceOfPowersRepository.findByName("World Walkers");
         alexTerrieur.addPower(masteryPowersRepository.findByName("Hide in the Gloom"));
         alexTerrieur.addPower(masteryPowersRepository.findByName("Walk the Gloom"));
+
+        alexTerrieur.actorSkill.actor = alexTerrieur;
+        alexTerrieur.actorSkill.actorId = alexTerrieur.id;
+
+        alexTerrieur.actorSkill.stealth = 1;
+        alexTerrieur.actorSkill.charm = 2;
+        alexTerrieur.actorSkill.persuade = 1;
+        alexTerrieur.actorSkill.knowledge = 4;
+        alexTerrieur.actorSkill.medicine = 4;
+        alexTerrieur.actorSkill.survival = 2;
+        alexTerrieur.actorSkill.technical = 3;
 
         actorsRepository.save(alexTerrieur);
     }

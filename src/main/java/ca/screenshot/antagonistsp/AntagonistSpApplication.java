@@ -1,14 +1,12 @@
 package ca.screenshot.antagonistsp;
 
-import ca.screenshot.antagonistsp.controller.SourceOfPowerController;
 import ca.screenshot.antagonistsp.repository.*;
+import ca.screenshot.antagonistsp.service.ActorView;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.thymeleaf.spring6.SpringTemplateEngine;
 
 @SpringBootApplication
 public class AntagonistSpApplication {
@@ -18,6 +16,10 @@ public class AntagonistSpApplication {
         SpringApplication.run(AntagonistSpApplication.class, args);
     }
 
+    @Bean
+    ActorView createActorService(Actors actors, Categories categories) {
+        return new ActorView(actors, categories);
+    }
 
     @Bean
     TestBean createTestBean(Descriptors itemRepo, Categories categories, Actors actors, SourceOfPowers sourceOfPowerRepo, Masteries masteriesRepo, MasteryPowers masteryPowersRepo) {

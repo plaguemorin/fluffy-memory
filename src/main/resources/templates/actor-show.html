@@ -9,43 +9,86 @@
 <!--/* The element with breadcrumb class will be passed to the header fragment */-->
 <header th:insert="layout/default :: header(~{ :: .breadcrumb})">
     <ol class="breadcrumb container">
-        <li><a href="/">Home</a></li>
-        <li><a href="/actor/">Actors</a></li>
-        <li><a href="/actor/0" th:text="${actor.name}" th:href="'/actor/' + ${actor.id}">Actor Name</a></li>
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/actor/">Actors</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="/actor/0" th:text="${actor.displayName}"
+                                                                  th:href="'/actor/' + ${actor.id}">Actor Name</a></li>
     </ol>
 </header>
 
 <div th:insert="layout/default :: content(~{ :: .actor })">
-<div class="actor">
-    <h1 th:text="${actor.name}">Actor name</h1>
-    <div class="power" th:id="${actor.power.id}">
-        <a href="/source/" th:href="'/source/' + ${actor.power.id}" th:text="${actor.power.name}">Source name</a>
-    </div>
-
-    <div class="masteries">
-        <div class="mastery" th:each="e : ${T(ca.screenshot.antagonistsp.utils.MasteryPowerViewUtil).OrderPowersByPowers(actor.powers)}">
-            <h2 th:text="${e.mastery.name}" th:id="'mastery_' + ${e.mastery.id}">Mastery</h2>
-            <span class="max_mastery_level" th:text="${e.level}">0</span>
-            <div th:each="p : ${e.powers}"><a href="/source/" th:href="'/source/' + ${p.id}" th:text="${p.name}"> Power</a></div>
+    <div class="actor">
+        <h1 th:text="${actor.displayName}">Actor name</h1>
+        <div class="cost">
+            <span>Total cost of character:</span>
+            <span th:text="${actor.totalCost}">0</span>
         </div>
+
+        <div class="identity">
+            <div class="ethnicity">
+                <span>Ethnicity: </span>
+                <span>ETHNICITY</span>
+            </div>
+
+            <div class="language">
+                <span>Languages: </span>
+                <ol>
+                    <li>Common</li>
+                </ol>
+            </div>
+
+            <div class="power" th:id="${actor.sourceOfPower.id}">
+                <span>Source of power: </span>
+                <a href="/source/" th:href="'/source/' + ${actor.sourceOfPower.id}"
+                   th:text="${actor.sourceOfPower.displayName}">Source name</a>
+            </div>
+        </div>
+
+        <div class="attributes">
+            <div class="gender">
+                <span>Gender: </span>
+                <span>G</span>
+            </div>
+            <div class="sexori">
+                <span>Sexual Orientation: </span>
+                <span> G</span>
+            </div>
+            <div class="age">
+                <span>Age: </span>
+                <span th:text="${actor.modifierAge.displayName}">NA</span>
+            </div>
+            <div class="size">
+                <span>Size: </span>
+                <span th:text="${actor.modifierSize.displayName}">SIZE</span>
+            </div>
+            <div class="handiness">
+                <span>Handiness:</span>
+                <span th:text="${actor.handiness.displayName}">No Hands</span>
+            </div>
+        </div>
+
+        <div class="masteries">
+            <div class="mastery" th:each="e : ${actor.powers}">
+                <h2 th:text="${e.mastery.name}" th:id="'mastery_' + ${e.mastery.id}">Mastery</h2>
+                <span class="max_mastery_level" th:text="${e.level}">0</span>
+                <div th:each="p : ${e.powers}"><a href="/source/" th:href="'/source/' + ${p.id}" th:text="${p.name}">
+                    Power</a></div>
+            </div>
+        </div>
+
+        <!--
+        <table class="table">
+                <tr class="table-header">
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Cost</th>
+                    <th>Attributes</th>
+                </tr>
+            </table>
+            -->
+
+        <th:block th:replace="fragments/skills :: skill(${actor.skillsLevel}, ${actor.skills})"/>
     </div>
-
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Category</th>
-            <th>Cost</th>
-            <th>Attributes</th>
-        </tr>
-
-        <tr th:each="desc : ${actor.descriptors}">
-            <th th:text="${desc.name}">Name</th>
-            <td th:text="${desc.category.name}">Category</td>
-            <td th:text="${desc.cost}">Cost</td>
-            <td th:text="${desc.attributes.attributes}">Attributes</td>
-        </tr>
-    </table>
-</div>
 </div>
 
 </body>

@@ -20,12 +20,13 @@
 
 <!--/* Header fragment */-->
 <div th:fragment="header(breadcrumb)">
-    <ol class="breadcrumb container" th:replace="${breadcrumb}">
-        <li><a href="#">Fake</a></li>
-    </ol>
     <nav class="navbar navbar-inverse navbar-fixed-top" th:replace="fragments/header :: header">
         <p>This is going to be replaced by <span>fragments/header.html</span></p>
     </nav>
+
+    <ol class="breadcrumb container" th:replace="${breadcrumb}">
+        <li><a href="#">Fake</a></li>
+    </ol>
 </div>
 
 <!--/* The value passed from calling template will be inserted in this element */-->

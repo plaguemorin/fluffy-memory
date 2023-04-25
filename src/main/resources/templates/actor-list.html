@@ -9,14 +9,15 @@
 <!--/* The element with breadcrumb class will be passed to the header fragment */-->
 <header th:insert="layout/default :: header(~{ :: .breadcrumb})">
     <ol class="breadcrumb container">
-        <li><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a href="/actor/">Actors</a></li>
     </ol>
 </header>
 
 <div th:insert="layout/default :: content(~{ :: .actors })">
 <div class="actors" th:each="actor : ${actors}">
     <div th:id="'actor-' + ${actor.id}">
-        <a th:href="'/actor/' + ${actor.id}" th:text="${actor.name}">Actor Name</a>
+        <a th:href="'/actor/' + ${actor.id}" th:text="${actor.displayName}">Actor Name</a>
     </div>
 </div>
 </div>

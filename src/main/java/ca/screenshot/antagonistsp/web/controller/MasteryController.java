@@ -1,4 +1,4 @@
-package ca.screenshot.antagonistsp.controller;
+package ca.screenshot.antagonistsp.web.controller;
 
 import ca.screenshot.antagonistsp.entity.Mastery;
 import ca.screenshot.antagonistsp.repository.Masteries;
