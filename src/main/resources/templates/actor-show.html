@@ -9,7 +9,9 @@
 <!--/* The element with breadcrumb class will be passed to the header fragment */-->
 <header th:insert="layout/default :: header(~{ :: .breadcrumb})">
     <ol class="breadcrumb container">
-        <li><a href="#">Home</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/actor/">Actors</a></li>
+        <li><a href="/actor/0" th:text="${actor.name}" th:href="'/actor/' + ${actor.id}">Actor Name</a></li>
     </ol>
 </header>
 
@@ -22,8 +24,9 @@
 
     <div class="masteries">
         <div class="mastery" th:each="e : ${T(ca.screenshot.antagonistsp.utils.MasteryPowerViewUtil).OrderPowersByPowers(actor.powers)}">
-            <h2 th:text="${e.key.name}" th:id="'mastery_' + ${e.key.id}">Mastery</h2>
-            <div th:each="p : ${e.value}"><a href="/source/" th:href="'/source/' + ${p.id}" th:text="${p.name}"> Power</a></div>
+            <h2 th:text="${e.mastery.name}" th:id="'mastery_' + ${e.mastery.id}">Mastery</h2>
+            <span class="max_mastery_level" th:text="${e.level}">0</span>
+            <div th:each="p : ${e.powers}"><a href="/source/" th:href="'/source/' + ${p.id}" th:text="${p.name}"> Power</a></div>
         </div>
     </div>
 
