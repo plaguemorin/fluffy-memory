@@ -10,10 +10,13 @@
     </parent>
 
     <groupId>ca.screenshot</groupId>
-    <artifactId>AntagonistSP</artifactId>
+    <artifactId>antagonistsp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>AntagonistSP</name>
     <description>AntagonistSP</description>
+
+    <packaging>jar</packaging>
+
 
     <properties>
         <java.version>20</java.version>
@@ -77,6 +80,8 @@
     </dependencies>
 
     <build>
+        <finalName>antagonistsp</finalName>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

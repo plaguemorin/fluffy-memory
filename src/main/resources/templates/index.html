@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="layout/default :: head(~{ ::title})">
+  <meta charset="UTF-8">
+  <title>Actors !</title>
+</head>
+<body>
+
+<!--/* The element with breadcrumb class will be passed to the header fragment */-->
+<header th:insert="layout/default :: header(~{ :: .breadcrumb})">
+  <ol class="breadcrumb container">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="/actor/">Actors</a></li>
+    <li class="breadcrumb-item active" aria-current="page"><a href="/actor/0" th:text="${actor.displayName}"
+                                                              th:href="'/actor/' + ${actor.id}">Actor Name</a></li>
+  </ol>
+</header>
+
+<div th:insert="layout/default :: content(~{ ::.index })">
+<div class="index">
+  Hi
+</div>
+</div>
+
+</body>
+</html>
