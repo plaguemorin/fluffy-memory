@@ -1,6 +1,9 @@
 package ca.screenshot.antagonistsp.entity;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Category {
@@ -13,7 +16,8 @@ public class Category {
 
     public String name;
 
-    public Category() {}
+    public Category() {
+    }
 
     public Category(Category parentCategory, String name) {
         this.parentCategory = parentCategory;

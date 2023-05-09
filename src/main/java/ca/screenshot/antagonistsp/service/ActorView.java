@@ -169,7 +169,6 @@ public class ActorView {
             ret.skillsLevel = MakeSkills(actor.actorSkill);
             ret.skills = MakeSkills(ret.attributes, ret.skillsLevel);
 
-
             ret.powers = actor.powers.stream().collect(
                             Collectors.groupingBy(actorMasteryPower1 -> actorMasteryPower1.power.parent))
                     .entrySet().stream()

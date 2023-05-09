@@ -25,13 +25,39 @@ public class DescriptorAttributes {
         this.descriptor = parent;
     }
 
-    public void setStrength(int strength) { this.attributes.strength = strength; }
-    public void setConstitution(int constitution) { this.attributes.constitution = constitution; }
-    public void setAgility(int agility) { this.attributes.agility = agility; }
-    public void setPerception(int perception) { this.attributes.perception = perception; }
-    public void setReflex(int reflex) { this.attributes.reflex = reflex; }
-    public void setIntelligence(int intelligence) { this.attributes.intelligence = intelligence; }
-    public void setCharisma(int charisma) { this.attributes.charisma = charisma; }
-    public void setHeight(int height) { this.attributes.height = height; }
-    public void setWeight(int weight) { this.attributes.weight = weight; }
+    public void setStrength(int strength) {
+        this.attributes.strength = strength;
+    }
+
+    public void setConstitution(int constitution) {
+        this.attributes.constitution = constitution;
+    }
+
+    public void setAgility(int agility) {
+        this.attributes.agility = agility;
+    }
+
+    public void setPerception(int perception) {
+        this.attributes.perception = perception;
+    }
+
+    public void setReflex(int reflex) {
+        this.attributes.reflex = reflex;
+    }
+
+    public void setIntelligence(int intelligence) {
+        this.attributes.intelligence = intelligence;
+    }
+
+    public void setCharisma(int charisma) {
+        this.attributes.charisma = charisma;
+    }
+
+    public void setHeight(int height) {
+        this.attributes.height = height;
+    }
+
+    public void setWeight(int weight) {
+        this.attributes.weight = weight;
+    }
 }

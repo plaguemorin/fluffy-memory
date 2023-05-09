@@ -9,19 +9,11 @@ import java.util.UUID;
 
 @Entity
 public class Mastery {
-    public enum Type {
-        MAJOR,
-        MINOR,
-        SPECIALIZE
-    }
-
     @Id
     public UUID id;
     public String name;
-
     @Enumerated(EnumType.STRING)
     public Type type;
-
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "parent", cascade = CascadeType.ALL)
     public Set<MasteryPower> powers;
 
@@ -55,5 +47,11 @@ public class Mastery {
     @Override
     public int hashCode() {
         return Objects.hash(id);
+    }
+
+    public enum Type {
+        MAJOR,
+        MINOR,
+        SPECIALIZE
     }
 }

@@ -9,6 +9,8 @@ import java.util.UUID;
 
 public interface MasteryPowers extends CrudRepository<MasteryPower, UUID> {
     MasteryPower findByName(String name);
+
     Set<MasteryPower> findAllByParentTypeIs(Mastery.Type type);
+
     Set<MasteryPower> findAllByParentName(String parentName);
 }

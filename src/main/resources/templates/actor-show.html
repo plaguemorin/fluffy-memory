@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head th:replace="layout/default :: head(~{ ::title})">
+<head th:replace="~{layout/default :: head(~{ ::title})}">
     <meta charset="UTF-8">
-    <title>Actors !</title>
+    <title th:text="${actor.displayName}">Actors !</title>
 </head>
 <body>
 
 <!--/* The element with breadcrumb class will be passed to the header fragment */-->
-<header th:insert="layout/default :: header(~{ ::.breadcrumb})">
+<header th:insert="~{layout/default :: header(~{ ::.breadcrumb})}">
     <ol class="breadcrumb container">
         <li class="breadcrumb-item"><a href="/">Home</a></li>
         <li class="breadcrumb-item"><a href="/actor/">Actors</a></li>
@@ -16,7 +16,7 @@
     </ol>
 </header>
 
-<div th:insert="layout/default :: content(~{ :: .actor })">
+<div th:insert="~{layout/default :: content(~{ :: .actor })}">
     <div class="actor">
         <h1 th:text="${actor.displayName}">Actor name</h1>
 
@@ -25,7 +25,10 @@
             <span th:text="${actor.totalCost}">0</span>
         </div>
 
-        <div th:replace="fragments/attributes :: attributes(${actor.attributes})"></div>
+        <div class="attributes">
+            <h2>Attributes</h2>
+            <div th:replace="~{fragments/attributes :: attrs(${actor.attributes})}"></div>
+        </div>
 
         <div class="identity">
             <h2>Identity</h2>
@@ -84,7 +87,10 @@
             </div>
         </div>
 
-        <div th:replace="fragments/skills :: skill(${actor.skillsLevel}, ${actor.skills})"></div>
+        <div class="skill">
+            <h2>Skills</h2>
+            <div th:replace="~{fragments/skills :: skill(${actor.skillsLevel}, ${actor.skills})}"></div>
+        </div>
 
         <div class="log">
             <h2>Quest Log</h2>

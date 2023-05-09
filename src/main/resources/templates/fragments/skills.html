@@ -6,27 +6,49 @@
 </head>
 <body>
 
-<div class="skill" th:fragment="skill(levels, skill)">
-    <h2>Skills</h2>
+
+<tr th:classappend="'skill-' + ${type}" th:fragment="skillrowhdr(hdr, type, level, skill)">
+    <th class="row-header" rowspan="5" th:text="${hdr}">Physical</th>
+
+    <td th:text="${type}">NAME</td>
+    <td th:text="${level}">0</td>
+    <td th:text="${skill}">0</td>
+    <td>
+        <button class="btn btn-primary" type="button">Roll!</button>
+    </td>
+</tr>
+
+<tr th:classappend="'skill-' + ${type}" th:fragment="skillrow(type, level, skill)">
+    <td th:text="${type}">NAME</td>
+    <td th:text="${level}">0</td>
+    <td th:text="${skill}">0</td>
+    <td>
+        <button class="btn btn-primary" type="button">Roll!</button>
+    </td>
+</tr>
+
+
+<div th:fragment="skill(levels, skill)">
+    <div class="visually-hidden">
+
+    </div>
+
+    <script type="application/javascript">
+
+    </script>
 
     <table class="table">
+        <thead>
         <tr class="table-header">
             <th scope="col">Category</th>
             <th scope="col">Skill</th>
             <th scope="col">Level</th>
             <th scope="col">Rating</th>
+            <td></td>
         </tr>
-        <tr class="skill-physical">
-            <th rowspan="5" class="row-header">Physical</th>
-            <td>Acrobatics</td>
-            <td th:text="${levels.acrobatics}">0</td>
-            <td th:text="${skill.acrobatics}">0</td>
-        </tr>
-        <tr class="skill-physical">
-            <td>Athletics</td>
-            <td th:text="${levels.athletics}">0</td>
-            <td th:text="${skill.athletics}">0</td>
-        </tr>
+        </thead>
+        <tr th:replace="~{ :: skillrowhdr('Physical', 'Acrobatics', ${levels.acrobatics}, ${skill.acrobatics})}"></tr>
+        <tr th:replace="~{ :: skillrow('Athletics', ${levels.athletics}, ${skill.athletics})}"></tr>
         <tr class="skill-physical">
             <td>Brutal Fighting</td>
             <td th:text="${levels.brutalFighting}">0</td>
