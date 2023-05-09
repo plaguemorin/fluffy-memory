@@ -1,0 +1,2133 @@
+<td class='attributes'>([^<]*)</td><td class='element'>([^<]*)</td><td class='element'>([^<]*)</td><td class='element'>([^<]*)</td><td class='element'>([^<]*)</td><td class='element'>([^<]*)</td><td class='element'>([^<]*)</td><td class='element'>([^<]*)</td><td class='element_left'>([^<]*)</td><td class='element'>([^<]*)</td>
+
+
+name="", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0"
+
+
+
+name="4â€x4â€ Wood", armour="-", duration="-", hit="Brutal", dmg="3(4)+Muscular", range="Close", ammo="0", descriptors="Blunt, Large, Versatile", desc="", slug="11"
+
+
+
+name="4”x4” Wood", armour="-", duration="-", hit="Brutal", dmg="3(4)+Melee", range="Close", ammo="0", descriptors="Blunt, Large, Versatile", desc="", slug="11"
+
+
+
+name="60-gallon Air Compressor (Heavy 28)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="120"
+
+
+
+name="Adrenaline Shot (1)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Adrenaline shot can be use to stabilize a dying character with a bonus.", slug="10"
+
+
+
+name="Adrenaline Shot (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Adrenaline shot can be use to stabilize a dying character with a bonus.", slug="10"
+
+
+
+name="Air Compressor, 60-gallon (Heavy 28)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="120"
+
+
+
+name="Alarm Clock", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="10"
+
+
+
+name="Alarm Clock, Mechanical", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Alchemy Kit, Basic", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="4"
+
+
+
+name="Alcohol, 70%", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="6"
+
+
+
+name="Alcohol, Pure", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="200"
+
+
+
+name="Animal Care Kit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="10"
+
+
+
+name="Animal Food (1 day) (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="It’s enough food for an animal for a day. A human can also eat that food but it will need 3 rations a day and the Game Master can give a negative temporary descriptions to the character due to the poor quality and taste of the food.", slug="0.3"
+
+
+
+name="Antidote, Red Vine (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Remove the effect of the infection caused by the red vines.", slug="10"
+
+
+
+name="Antitoxin (1)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Remove the effect of toxins and poisons.", slug="25"
+
+
+
+name="Antitoxin (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Remove the effect of toxins from bacteria, mushrooms, toads and snakes. It also work with some manufactured toxins like sarin.", slug="25"
+
+
+
+name="Armor Jacket", armour="5", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="140"
+
+
+
+name="Armor Jacket (Heavy 3)", armour="5", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="280"
+
+
+
+name="Armored French Highwayman Coat", armour="6", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="240"
+
+
+
+name="Armored French Highwayman Coat (Heavy 4)", armour="6", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="480"
+
+
+
+name="Armored Jumpsuit", armour="4", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="120"
+
+
+
+name="Armored Jumpsuit (Heavy 2)", armour="4", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="240"
+
+
+
+name="Armored Lined Coat", armour="5", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="180"
+
+
+
+name="Armored Lined Coat (Heavy 3)", armour="5", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="360"
+
+
+
+name="Arrow or Bolt (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.5"
+
+
+
+name="Arrow or Bolt, Explosive (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Explosive arrows or bolts explode on contact. The explosion is not very powerful but since the projectile have connected with the target the explosion is really concentrate. It adds 5 to the impact test. It’s also very loud and the range is limited to shor", slug="30"
+
+
+
+name="Arrow or Bolt, Fire (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Fire arrows or bolts are more complex than just gasoline on a projectile. It required a good mix of flammable ingredients that will burn just the right amount of time and not unbalance the projectile. Fire add the burn effect if a wound is done.", slug="2"
+
+
+
+name="Assault Rifle, AK-47 (7.62x39mm)", armour="-", duration="-", hit="Long Arms", dmg="9", range="Long", ammo="30", descriptors="Bleed, High Caliber, FA, Large, Loud, Two-handed", desc="", slug="984"
+
+
+
+name="Assault Rifle, AK-74 (5.45mm)", armour="-", duration="-", hit="Long Arms", dmg="8", range="Long", ammo="30", descriptors="Bleed, FA, Large, Loud, Two-handed", desc="", slug="806"
+
+
+
+name="Assault Rifle, Beretta M70/90 (5.56x45mm)", armour="-", duration="-", hit="1+Long Arms", dmg="8", range="Long", ammo="30", descriptors="Bleed, FA, Large, Loud, Two-handed", desc="", slug="1210"
+
+
+
+name="Assault Rifle, FN FAL Light Automatic (7.62x51mm Nato)", armour="-", duration="-", hit="2+Long Arms", dmg="9", range="Long", ammo="20", descriptors="Bleed, Burst, High Caliber, Large, Loud, Two-handed", desc="", slug="2460"
+
+
+
+name="Assault Rifle, Galil (5.56x45mm)", armour="-", duration="-", hit="1+Long Arms", dmg="7", range="Long", ammo="20", descriptors="Bleed, FA, Large, Loud, Two-handed", desc="", slug="675"
+
+
+
+name="Assault Rifle, Heckler & Koch G36", armour="-", duration="-", hit="1+Long Arms", dmg="8", range="Long", ammo="30", descriptors="Bleed, FA, Large, Loud, Two-handed", desc="", slug="1210"
+
+
+
+name="Assault Rifle, M16 A2 (5.56x45mm)", armour="-", duration="-", hit="2+Long Arms", dmg="8", range="Long", ammo="30", descriptors="Bleed, Burst, Large, Loud, Two-handed", desc="", slug="2419"
+
+
+
+name="Assault Rifle, M4 (5.56x45mm)", armour="-", duration="-", hit="1+Long Arms", dmg="7", range="Long", ammo="30", descriptors="Bleed, Burst, Large, Loud, Two-handed", desc="", slug="810"
+
+
+
+name="Assault Rifle, Steyr AUG (5.56x45mm)", armour="-", duration="-", hit="2+Long Arms", dmg="8", range="Long", ammo="30", descriptors="Bleed, FA, Large, Loud, Two-handed", desc="", slug="2419"
+
+
+
+name="Backpack, Large (Up to 18 items) (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="20"
+
+
+
+name="Backpack, Large (Up to 18 items) Waterproof (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="40"
+
+
+
+name="Backpack, Medium (Up to 12 items) (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="12"
+
+
+
+name="Backpack, Medium (Up to 12 items) Waterproof (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="24"
+
+
+
+name="Backpack, Small (6 items) (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="8"
+
+
+
+name="Backpack, Small (6 items) Waterproof (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="16"
+
+
+
+name="Bag (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="6"
+
+
+
+name="Bag, Waterproof (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="12"
+
+
+
+name="Ballistic Shield", armour="4", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="160"
+
+
+
+name="Ballistic Vest", armour="3", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="80"
+
+
+
+name="Bandages, Clean (1)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.1"
+
+
+
+name="Bandages, Clean (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Those bandages are clean and are better to stop bleeding. Add a bonus to first aid test to stop bleeding.", slug="0.1"
+
+
+
+name="Bandolier (50 bullets)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Allow to access ammunitions without having to use an actions to access the ammunitions first.", slug="20"
+
+
+
+name="Baseball Bat", armour="-", duration="-", hit="1+Brutal", dmg="4(5)+Melee", range="Close", ammo="0", descriptors="Blunt, Versatile", desc="", slug="38"
+
+
+
+name="Batteries Charger, Electric", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="15"
+
+
+
+name="Batteries Charger, Solar", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Can recharge up to 3 batteries or a car battery every day of sunlight.", slug="35"
+
+
+
+name="Battery (Stack)", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Each battery last for the duration of a scene. It can be used on almost any devices.", slug="1"
+
+
+
+name="Battery, Car (Heavy 5)", armour="-", duration="1 Chapter", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Each battery last for a chapter but are not very convenient to carry.", slug="2"
+
+
+
+name="Bayonet", armour="-", duration="-", hit="Finesse", dmg="2+Melee", range="Close", ammo="0", descriptors="Bleed", desc="", slug="5"
+
+
+
+name="Bazooka", armour="-", duration="-", hit="Long Arms", dmg="15", range="Short", ammo="1", descriptors="Area, Breach, Large, Loud, Rocket, Two-handed", desc="", slug="1308"
+
+
+
+name="Bedroll", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="4"
+
+
+
+name="Beer, Bottle", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Bell", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Binoculars", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="112"
+
+
+
+name="Biodiesel Can", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Biodiesel can be used for some equipments, generators or vehicles.", slug="1"
+
+
+
+name="Biodiesel Drum (Heavy 55)", armour="-", duration="1 Chapter", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Biodiesel can be used for some equipments, generators or vehicles.", slug="5"
+
+
+
+name="Bipod", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Can only be used when prone. Remove the penalty when firing at Long Range or procure a bonus if the penalty was already removed by another accessory.", slug="34"
+
+
+
+name="Bird, of Prey", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="100"
+
+
+
+name="Bird, Small", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="6"
+
+
+
+name="Blackjack", armour="-", duration="-", hit="Brutal", dmg="4+Melee", range="Close", ammo="0", descriptors="Blunt", desc="", slug="13"
+
+
+
+name="Blanket", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Blanket, Waterproof", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="20"
+
+
+
+name="Blowdart Pen (Stack)", armour="-", duration="-", hit="1+Finesse", dmg="2", range="Short", ammo="1", descriptors="Bleed", desc="", slug="6"
+
+
+
+name="Blowgun", armour="-", duration="-", hit="2+Finesse", dmg="2", range="Short", ammo="1", descriptors="Bleed, Two-handed", desc="", slug="9"
+
+
+
+name="Blowtorch, Oil", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="18"
+
+
+
+name="Bola", armour="-", duration="-", hit="Finesse", dmg="2+Melee", range="Short", ammo="1", descriptors="", desc="", slug="2"
+
+
+
+name="Bomb, Nail", armour="-", duration="-", hit="Finesse", dmg="8", range="Short", ammo="1", descriptors="Area, Bleed, Fragile, Loud", desc="", slug="79"
+
+
+
+name="Bomb, Pipe", armour="-", duration="-", hit="Finesse", dmg="10", range="Short", ammo="1", descriptors="Area, Fragile, Fuse, Loud", desc="", slug="155"
+
+
+
+name="Bomb, Smoke", armour="-", duration="-", hit="Finesse", dmg="-", range="Short", ammo="1", descriptors="Area, Fuse, Smoke", desc="", slug="2"
+
+
+
+name="Book, Diary", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="6"
+
+
+
+name="Book, Dictionary", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="28"
+
+
+
+name="Book, Encyclopedia", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="40"
+
+
+
+name="Book, Novel", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="12"
+
+
+
+name="Book, Religious", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="16"
+
+
+
+name="Boomerang", armour="-", duration="-", hit="Finesse", dmg="3+Melee", range="Short", ammo="1", descriptors="Blunt, Return on Miss", desc="", slug="7"
+
+
+
+name="Bottle, Broken", armour="-", duration="-", hit="Brutal", dmg="1+Melee", range="Close", ammo="0", descriptors="Bleed, Fragile", desc="", slug="0.1"
+
+
+
+name="Bottle, empty", armour="-", duration="-", hit="Brutal", dmg="1+Melee", range="Close", ammo="0", descriptors="Blunt, Fragile", desc="", slug="1"
+
+
+
+name="Bow, Compound", armour="-", duration="-", hit="1+Finesse", dmg="6+Melee", range="Long", ammo="1", descriptors="Bleed, Large, Two-handed", desc="", slug="93"
+
+
+
+name="Bow, Homemade", armour="-", duration="-", hit="Finesse", dmg="5", range="Short", ammo="1", descriptors="Bleed, Large, Two-handed", desc="", slug="7"
+
+
+
+name="Bow, Longbow", armour="-", duration="-", hit="Finesse", dmg="4+Melee", range="Long", ammo="1", descriptors="Bleed, Large, Two-handed", desc="", slug="23"
+
+
+
+name="Bow, Recurve", armour="-", duration="-", hit="1+Finesse", dmg="5+Melee", range="Short", ammo="1", descriptors="Bleed, Large, Two-handed", desc="", slug="31"
+
+
+
+name="Box, Small Waterproof", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="3"
+
+
+
+name="Branch", armour="-", duration="-", hit="Brutal", dmg="2(3)+Melee", range="Close", ammo="0", descriptors="Blunt, Fragile, Large, Versatile", desc="", slug="0"
+
+
+
+name="Brass Knuckles", armour="-", duration="-", hit="Brutal", dmg="1+Melee", range="Close", ammo="0", descriptors="Blunt", desc="", slug="2"
+
+
+
+name="Brick", armour="-", duration="-", hit="Brutal", dmg="1+Melee", range="Short", ammo="1", descriptors="Blunt", desc="", slug="2"
+
+
+
+name="Briefcase", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="6"
+
+
+
+name="Bullwhip", armour="-", duration="-", hit="Finesse", dmg="3", range="Short", ammo="0", descriptors="Reach", desc="", slug="2"
+
+
+
+name="Burning Torch", armour="-", duration="-", hit="Brutal", dmg="2+Melee", range="Close", ammo="0", descriptors="Burn", desc="", slug="3"
+
+
+
+name="Caltrops, bag", armour="-", duration="-", hit="Finesse", dmg="2", range="Close", ammo="1", descriptors="Bleed, Cause Pain, Trap", desc="", slug="7"
+
+
+
+name="Camera, Analog", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="16"
+
+
+
+name="Camera, Digital", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="220"
+
+
+
+name="Camera, Instant", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="30"
+
+
+
+name="Camera, Security", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="60"
+
+
+
+name="Camera’s Instant Film (600 Photos)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="10"
+
+
+
+name="Camera’s Roll of Film (36 Photos)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="5"
+
+
+
+name="Camouflage", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="20"
+
+
+
+name="Camp Bed, Folding (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="12"
+
+
+
+name="Camp Stove, Propane (Heavy 2)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="16"
+
+
+
+name="Candle (Stack)", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.2"
+
+
+
+name="Cane", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="3"
+
+
+
+name="Canteen (1 quart)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="6"
+
+
+
+name="Carabiner (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="4"
+
+
+
+name="Cat", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="3"
+
+
+
+name="CB Radio", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="90"
+
+
+
+name="Chain", armour="-", duration="-", hit="1+Brutal", dmg="3+Melee", range="Close", ammo="0", descriptors="Blunt", desc="", slug="9"
+
+
+
+name="Chain (per meter)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Chainsaw", armour="-", duration="-", hit="Brutal", dmg="12", range="Close", ammo="25", descriptors="Bleed, Breach, Biodiesel, Large, Loud, Two-handed", desc="", slug="594"
+
+
+
+name="Chalks (box)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Chemical Protection Coating", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Give a resistance bonus against any chemical and acid.", slug="80"
+
+
+
+name="Chemical Toilet, Portable (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="22"
+
+
+
+name="Chest Harness with Pockets (100 bullets)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Allow to access ammunitions without having to use an actions to access the ammunitions first.", slug="40"
+
+
+
+name="Chic", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="50"
+
+
+
+name="Choke Tube", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="The Choke Tube modify the firing spread of a shotguns to a wide spread. It take a normal action to add or remove the choke tube. A wide spread allow to hit up to 2 adjacent enemies with a single shoot. It always give a bonus to hit but damage is divided by", slug="10"
+
+
+
+name="Cigarettes, Pack", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Cigars, Box", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="9"
+
+
+
+name="Claymore", armour="-", duration="-", hit="None", dmg="18", range="Close", ammo="1", descriptors="Area, Breach, Loud, Trap", desc="", slug="4143"
+
+
+
+name="Cleaver", armour="-", duration="-", hit="Brutal", dmg="3+Melee", range="Close", ammo="0", descriptors="Bleed", desc="", slug="9"
+
+
+
+name="Climbing Gear", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="40"
+
+
+
+name="Club", armour="-", duration="-", hit="1+Brutal", dmg="4+Melee", range="Close", ammo="0", descriptors="Blunt, Two-handed", desc="", slug="14"
+
+
+
+name="Clutches (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="5"
+
+
+
+name="Coal, Bag (Heavy 12) ", armour="-", duration="1 Chapter", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Coal can be used for heating, cooking, lighting and also generators.", slug="4"
+
+
+
+name="Coal, Small bag", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Coal can be used for heating, cooking, lighting and also generators.", slug="1"
+
+
+
+name="Coffee, Bag", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="8"
+
+
+
+name="Colorfull", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="20"
+
+
+
+name="Compass", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="13"
+
+
+
+name="Concealable Holster", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Small arm can be readied with a Quick Action and this holster procure a penalty to someone trying to detect a weapon.", slug="22"
+
+
+
+name="Concealing", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="20"
+
+
+
+name="Cooking Set, 4-Person", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="12"
+
+
+
+name="Cosmetics", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="12"
+
+
+
+name="Cricket Bat", armour="-", duration="-", hit="1+Brutal", dmg="4(5)+Melee", range="Close", ammo="0", descriptors="Blunt, Versatile", desc="", slug="38"
+
+
+
+name="Crossbow, Compound", armour="-", duration="-", hit="1+Long Arms", dmg="8", range="Long", ammo="1", descriptors="Bleed, Large, Two-handed", desc="", slug="357"
+
+
+
+name="Crossbow, Hand", armour="-", duration="-", hit="Small Arms", dmg="6", range="Short", ammo="1", descriptors="Bleed", desc="", slug="100"
+
+
+
+name="Crossbow, Pistol", armour="-", duration="-", hit="Small Arms", dmg="6", range="Short", ammo="1", descriptors="Bleed", desc="", slug="100"
+
+
+
+name="Crossbow, Recurve", armour="-", duration="-", hit="1+Long Arms", dmg="7", range="Long", ammo="1", descriptors="Bleed, Large, Two-handed", desc="", slug="239"
+
+
+
+name="Crossbow, Repeating", armour="-", duration="-", hit="1+Long Arms", dmg="7", range="Short", ammo="5", descriptors="Bleed, Large, Two-handed", desc="", slug="180"
+
+
+
+name="Crossbow, Rifle", armour="-", duration="-", hit="1+Long Arms", dmg="9", range="Long", ammo="1", descriptors="Bleed, Large, Two-handed", desc="", slug="508"
+
+
+
+name="Crowbar", armour="-", duration="-", hit="1+Brutal", dmg="4(5)+Melee", range="Close", ammo="0", descriptors="Blunt, Breach, Large, Versatile", desc="", slug="52"
+
+
+
+name="Crowbar (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="A crowbar can used as a decent weapon. See the weapons' section for more information.", slug="9"
+
+
+
+name="Dagger", armour="-", duration="-", hit="Brutal", dmg="2+Melee", range="Close", ammo="0", descriptors="Bleed", desc="", slug="5"
+
+
+
+name="Dark", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="20"
+
+
+
+name="Dart", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="4"
+
+
+
+name="Dart, Throwing", armour="-", duration="-", hit="Finesse", dmg="2", range="Short", ammo="1", descriptors="Bleed", desc="", slug="4"
+
+
+
+name="Defibrillator", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Defibrillator can be use to stabilize a dying character with a bonus. Require a battery.", slug="60"
+
+
+
+name="Dice, Loaded", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="12"
+
+
+
+name="Dice, Set", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.1"
+
+
+
+name="Digital Camera", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="220"
+
+
+
+name="Directonal Mic", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="65"
+
+
+
+name="Disc, DVD", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Disc, Movie", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Disc, Music", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Disc, Vinyl", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Disguise Kit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="12"
+
+
+
+name="Disinfectant", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="3"
+
+
+
+name="Disposable Respirator (1 use)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="30"
+
+
+
+name="Dog", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="25"
+
+
+
+name="Dog, Guard", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="90"
+
+
+
+name="Donkey or Mule", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="50"
+
+
+
+name="Drone", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="The drone come with a remote and a screen to see through the droneâ€™s camera. The drone armor is 0. The drone require batteries.", slug="300"
+
+
+
+name="Drone and Remote", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="300"
+
+
+
+name="Duct Tape", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="4"
+
+
+
+name="Durable", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="40"
+
+
+
+name="Dynamite Stick", armour="-", duration="-", hit="Finesse", dmg="12", range="Short", ammo="1", descriptors="Area, Breach, Fragile, Loud", desc="", slug="268"
+
+
+
+name="Electricians Gloves", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="8"
+
+
+
+name="Emergency Burn Kit (1 use)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="The emergency burn kit procure a bonus when stabilizing or healing a character that have suffer burn.", slug="55"
+
+
+
+name="Expensive", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="100"
+
+
+
+name="Explosive Shell, Large (Mortar)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="20"
+
+
+
+name="Explosive Shell, Small (Mortar)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="9"
+
+
+
+name="Extended Clip", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Double ammunition capacity.", slug="16"
+
+
+
+name="Eye Patch", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.1"
+
+
+
+name="Face Mask", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="False Identification Card", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="False identification card are associated to a person and a faction or community. There is generally no photo on the paper but a small description of the person. It allows to be recognized as a member of the community. It can be required to enter the commun", slug="60"
+
+
+
+name="False Identification Tattoos", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Those tattoos are associated to a faction or community. It allows to be recognized as a member of the community. It can be required to enter the community or trade with it or have a price without the outsider’s tax. The tattoos cannot be easily remove and ", slug="55"
+
+
+
+name="Fencing Foil", armour="-", duration="-", hit="4+Finesse", dmg="5", range="Close", ammo="0", descriptors="Bleed", desc="", slug="27"
+
+
+
+name="Fire Extinguisher, Chemical (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="56"
+
+
+
+name="Fire Extinguisher, Chemical Portable", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="44"
+
+
+
+name="Fire Poker", armour="-", duration="-", hit="1+Brutal", dmg="4(5)+Melee", range="Close", ammo="0", descriptors="Blunt, Large, Versatile", desc="", slug="33"
+
+
+
+name="Fire Resistance", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Give a resistance bonus against fire.", slug="30"
+
+
+
+name="Fire Resistant", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Give a resistance bonus against fire. Clothing with this feature are often firefighter suit.", slug="30"
+
+
+
+name="Firecrackers", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="First Aid Kit (20 uses)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="40"
+
+
+
+name="First Aid Kit, Small (10 uses)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="25"
+
+
+
+name="Fishing Line", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Fishing Rod and Tackle (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="40"
+
+
+
+name="Flamboyant", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="20"
+
+
+
+name="Flame Thrower", armour="-", duration="-", hit="Long Arms", dmg="14", range="Short", ammo="25", descriptors="Biodiesel, Burn, Inoffensive, Large, Loud, Two-handed", desc="", slug="755"
+
+
+
+name="Flare, Signal (Disposable)", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Flashlight", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="30"
+
+
+
+name="Flashlight, Crank", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="60"
+
+
+
+name="Flashlight, Headlamp", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="45"
+
+
+
+name="Flashlight, Metal", armour="-", duration="-", hit="Brutal", dmg="2+Melee", range="Close", ammo="0", descriptors="Blunt, Light", desc="", slug="30"
+
+
+
+name="Flute", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Full Body Armor", armour="6", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="280"
+
+
+
+name="Full Body Armor (Heavy 4)", armour="6", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="560"
+
+
+
+name="Garrote (Stack)", armour="-", duration="-", hit="Brutal", dmg="3+Melee", range="Close", ammo="0", descriptors="Choke, Inoffensive, Two-handed", desc="", slug="3"
+
+
+
+name="Gas Mask", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="30"
+
+
+
+name="Gas Mask Filter", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="15"
+
+
+
+name="Gasoline Blowtorch", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="18"
+
+
+
+name="Geiger Counter", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="200"
+
+
+
+name="Generator, Electrical (Heavy 6)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Can be connected to Solar Panels. When full, can provide energy for 1 chapter.", slug="200"
+
+
+
+name="Generator, Gas Powered (Heavy 6)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Can hold enough gasoline for a duration of 100 chapters.", slug="1000"
+
+
+
+name="Gewehr 43", armour="-", duration="-", hit="1+ Long Arms", dmg="8", range="Long", ammo="7", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="320"
+
+
+
+name="Glass Vial, Empty (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Gloves, Electricians", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="8"
+
+
+
+name="Gloves, Gardener", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="6"
+
+
+
+name="Glow-stick (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Goggles, Night Vision", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="300"
+
+
+
+name="Gold Bar", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="3250"
+
+
+
+name="GPS Handheld", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="130"
+
+
+
+name="Grappling Gun", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="44"
+
+
+
+name="Grappling Hook", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="6"
+
+
+
+name="Grenade Launcher", armour="-", duration="-", hit="Long Arms", dmg="-", range="Long", ammo="1", descriptors="Grenade, Large, Loud, Two-handed", desc="", slug="300"
+
+
+
+name="Grenade, Anti-tank", armour="-", duration="-", hit="Finesse", dmg="15", range="Short", ammo="1", descriptors="Area, Breach, Fragile, Loud", desc="", slug="523"
+
+
+
+name="Grenade, Burning-type", armour="-", duration="-", hit="Finesse", dmg="10", range="Short", ammo="1", descriptors="Area, Burn, Fragile, Smoke", desc="", slug="155"
+
+
+
+name="Grenade, Flashbang", armour="-", duration="-", hit="Finesse", dmg="12", range="Short", ammo="1", descriptors="Area, Blind, Exhaustion, Fragile, Inoffensive, Loud", desc="", slug="268"
+
+
+
+name="Grenade, Fragmentation", armour="-", duration="-", hit="Finesse", dmg="17", range="Short", ammo="1", descriptors="Area, Bleed, Fragile, Loud", desc="", slug="762"
+
+
+
+name="Grenade, Gas", armour="-", duration="-", hit="Finesse", dmg="3", range="Short", ammo="1", descriptors="Area, Gas", desc="", slug="50"
+
+
+
+name="Grenade, Illuminating", armour="-", duration="-", hit="Finesse", dmg="4", range="Short", ammo="1", descriptors="Area, Burn, Fragile, Light, Inoffensive", desc="", slug="149"
+
+
+
+name="Grenade, Incendiary", armour="-", duration="-", hit="Finesse", dmg="12", range="Short", ammo="1", descriptors="Area, Burn, Fragile, Inoffensive", desc="", slug="268"
+
+
+
+name="Grenade, Offensive", armour="-", duration="-", hit="Finesse", dmg="14", range="Short", ammo="1", descriptors="Area, Breach, Fragile, Loud", desc="", slug="425"
+
+
+
+name="Grenade, Sting", armour="-", duration="-", hit="Finesse", dmg="8", range="Short", ammo="1", descriptors="Area, Fragile, Inoffensive, Stun, Loud", desc="", slug="357"
+
+
+
+name="Grinder", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="28"
+
+
+
+name="Guitar (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="40"
+
+
+
+name="Hammer", armour="-", duration="-", hit="Brutal", dmg="4+Melee", range="Close", ammo="0", descriptors="Blunt", desc="", slug="13"
+
+
+
+name="Hand Drill", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="24"
+
+
+
+name="Hand Drill (plus 8 bits)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="24"
+
+
+
+name="Hand Saw", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="7"
+
+
+
+name="Handcuffs", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="16"
+
+
+
+name="Handle", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Reduce the recoil penalty by 1 when firing more than one shot in a round with an automatic weapon. It require holding the weapon with two hands.", slug="30"
+
+
+
+name="Hatchet", armour="-", duration="-", hit="Brutal", dmg="5+Melee", range="Close", ammo="0", descriptors="Bleed, Thrown", desc="", slug="50"
+
+
+
+name="Hazmat Suit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Come with the following free style descriptors; Chemical Protection Coating, Colorful, Hermetic, Impermeable, Uniform.", slug="200"
+
+
+
+name="Helmet, Military (Large)", armour="4", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="168"
+
+
+
+name="Helmet, Motocycle", armour="3", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="96"
+
+
+
+name="Hemp Twine", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Hermetic", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="60"
+
+
+
+name="Hidden Arm Slide", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Small arm can be readied with a Quick Action and this holster procure a penalty to someone trying to detect a weapon.", slug="58"
+
+
+
+name="High Caliber Ammunition FMJ (7+ impact) (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Holographic Sight", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Procure a bonus when firing at Close or Short Range. Cannot be used with a Red Dot.", slug="32"
+
+
+
+name="Holographic Sight (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="32"
+
+
+
+name="Holster", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Small arm can be readied with a Quick Action.", slug="25"
+
+
+
+name="Home Tool Kits", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="60"
+
+
+
+name="Honey, 1 litre", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="20"
+
+
+
+name="Horse, Draft", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="150"
+
+
+
+name="Horse, Ridding", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="225"
+
+
+
+name="Ice Cleats", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="10"
+
+
+
+name="Ice Pick", armour="-", duration="-", hit="1+Finesse", dmg="2", range="Close", ammo="0", descriptors="Bleed", desc="", slug="3"
+
+
+
+name="Impermeable", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="40"
+
+
+
+name="Insulated Tank (5 gallons) (Heavy 7 Full)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="16"
+
+
+
+name="Intimidating", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="20"
+
+
+
+name="Iodine (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Iodine is used to purify water. It can purify enough water for 10 days.", slug="5"
+
+
+
+name="Iron Tent Stakes (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.2"
+
+
+
+name="Javelin", armour="-", duration="-", hit="Finesse", dmg="3+Melee", range="Short", ammo="1", descriptors="Bleed, Large", desc="", slug="9"
+
+
+
+name="Jewellers Tools", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="64"
+
+
+
+name="Karabiner 98k", armour="-", duration="-", hit="1+ Long Arms", dmg="8", range="Long", ammo="5", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="302"
+
+
+
+name="Katana", armour="-", duration="-", hit="3+Finesse", dmg="5+Melee", range="Close", ammo="0", descriptors="Bleed, Two-handed", desc="", slug="94"
+
+
+
+name="Knife", armour="-", duration="-", hit="Finesse", dmg="2+Finesse", range="Close", ammo="0", descriptors="Bleed, Thrown", desc="", slug="6"
+
+
+
+name="Knife (Stack)", armour="-", duration="-", hit="Finesse", dmg="4", range="Close", ammo="0", descriptors="Bleed", desc="", slug="6"
+
+
+
+name="Lamp, 6-Watt Fluorescent", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="30"
+
+
+
+name="Lamp, Oil (Large)", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="8"
+
+
+
+name="Land Mine", armour="-", duration="-", hit="None", dmg="12", range="Close", ammo="1", descriptors="Area, Breach, Loud, Trap", desc="", slug="1228"
+
+
+
+name="Lantern, Biodiesel (Large)", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="26"
+
+
+
+name="Lantern, Candle (Large)", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="7"
+
+
+
+name="Laptop", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="130"
+
+
+
+name="Laser Gunsight", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Procure a bonus when firing at Close or Short Range. The Laser Gunsight can be seen and can make stealth harder. Cannot be used with a Red Dot or a Holographic Sight. Require a battery.", slug="74"
+
+
+
+name="Laser Gunsight (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="74"
+
+
+
+name="Lee-Enfield MK III", armour="-", duration="-", hit="1+ Long Arms", dmg="7", range="Long", ammo="10", descriptors="Bleed, Burst, Large, Loud, Two-handed", desc="", slug="540"
+
+
+
+name="Light", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="20"
+
+
+
+name="Light Stick", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Lighter (Stack)", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Lighter, Oil (Stack)", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="5"
+
+
+
+name="Limb Splint", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Linemanâ€™s Climbers", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="10"
+
+
+
+name="Liquor, Cheap Bottle", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Liquor, Fancy Bottle", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="25"
+
+
+
+name="Lock-Picking Tools", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="18"
+
+
+
+name="Low Caliber Ammunition FMJ (1-6 impact) (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.1"
+
+
+
+name="M1 Garand", armour="-", duration="-", hit="1+ Long Arms", dmg="6", range="Long", ammo="8", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="139"
+
+
+
+name="M1903 Springfield", armour="-", duration="-", hit="1+ Long Arms", dmg="7", range="Long", ammo="25", descriptors="Bleed, Burst, Large, Loud, Two-handed", desc="", slug="743"
+
+
+
+name="M1917 Enfield", armour="-", duration="-", hit="1+ Long Arms", dmg="7", range="Long", ammo="6", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="208"
+
+
+
+name="Mace Spray", armour="-", duration="-", hit="1+Finesse", dmg="6 Exhaustion", range="Close", ammo="25", descriptors="Blind, Inoffensive", desc="", slug="74"
+
+
+
+name="Machete", armour="-", duration="-", hit="Brutal/Finesse", dmg="4+Melee", range="Close", ammo="0", descriptors="Bleed", desc="", slug="19"
+
+
+
+name="Machine Gun, FN Minimi 5.56mm", armour="-", duration="-", hit="1+Long Arms", dmg="8", range="Long", ammo="200", descriptors="Bleed, FA, Large, Loud, Two-handed", desc="", slug="4637"
+
+
+
+name="Machine Gun, M134 Minigun (7.62x51mm Nato)", armour="-", duration="-", hit="Long Arms", dmg="9", range="Long", ammo="4000", descriptors="Bleed, High Caliber, FA, Large, Loud, Two-handed", desc="", slug="4921"
+
+
+
+name="Magnifying Glass", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="8"
+
+
+
+name="Manacles", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="30"
+
+
+
+name="Maps", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="15"
+
+
+
+name="Mask, Surgeon", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Match Case, Waterproof", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Meals, Cheap (1 day)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Meals must be eaten in the same day as they are purchased. Those meals are not very good and a character can get a negative temporary descriptions if eating this kind of food too often.", slug="0.1"
+
+
+
+name="Meals, Good (1 day)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Meals must be eaten in the same day as they are purchased.", slug="0.5"
+
+
+
+name="Mechanicâ€™s Tool Chest (Heavy 22, Heavy 40 full)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="100"
+
+
+
+name="Medical Case", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="60"
+
+
+
+name="Metal Detector (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="120"
+
+
+
+name="Metal Detector, Small", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="100"
+
+
+
+name="Mic, Directonal", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="65"
+
+
+
+name="Microscope, Laboratory", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="80"
+
+
+
+name="Microscope, Pocket", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="4"
+
+
+
+name="Military Helmet", armour="4", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="84"
+
+
+
+name="Mini Dart (Blowdart Pen) (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.1"
+
+
+
+name="Mini-Flashlight", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Used as a flashlight. Require a battery.", slug="44"
+
+
+
+name="Mini-Flashlight (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="44"
+
+
+
+name="Mirror, Large", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="30"
+
+
+
+name="Mirror, Small", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Molotov Cocktail", armour="-", duration="-", hit="Finesse", dmg="6", range="Short", ammo="1", descriptors="Area, Burn, Fragile, Inoffensive, Loud", desc="", slug="33"
+
+
+
+name="Moonshine, Bottle", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Mortar, Large", armour="-", duration="-", hit="Tecnicals", dmg="19", range="Long", ammo="1", descriptors="Area, Breach, Loud", desc="", slug="5582"
+
+
+
+name="Mortar, Small", armour="-", duration="-", hit="Tecnicals", dmg="16", range="Long", ammo="1", descriptors="Area, Breach, Loud", desc="", slug="3333"
+
+
+
+name="Mosin-Nagant", armour="-", duration="-", hit="1+ Long Arms", dmg="7", range="Long", ammo="5", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="203"
+
+
+
+name="Motion Detector Alarm Set", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="100"
+
+
+
+name="Motocycle Helmet", armour="3", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="48"
+
+
+
+name="Mouse", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.4"
+
+
+
+name="Net", armour="-", duration="-", hit="Finesse", dmg="-", range="Close", ammo="1", descriptors="Inoffensive, Stun", desc="", slug="3"
+
+
+
+name="Night Vision Goggles", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="300"
+
+
+
+name="Non-Conductivity", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Give a resistance bonus against electricity. This feature are generally included in boots.", slug="50"
+
+
+
+name="Nunchaku", armour="-", duration="-", hit="1+Finesse", dmg="3+Melee", range="Close", ammo="0", descriptors="Blunt", desc="", slug="9"
+
+
+
+name="Oil Can", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Oil can be used for some equipments, heating, cooking and lighting.", slug="1"
+
+
+
+name="Oil Drum (Heavy 55)", armour="-", duration="1 Chapter", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Oil can be used for some equipments, heating, cooking, lighting and also generators.", slug="6"
+
+
+
+name="Padlock", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="4"
+
+
+
+name="Painkiller (1)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Allow the character to ignore the effect of all his wounds for the duration of an encounter. Each time a wound is ignored a new wound is opened. The effects of wounds are ignored and also the count to the â€œDyingâ€ condition.", slug="25"
+
+
+
+name="Painkiller (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Allow the character to ignore the effect of all his wounds for the duration of an encounter. Each time a wound is ignored a new wound is opened. The effects of wounds are ignored and also the count to the â€œDyingâ€ condition.", slug="25"
+
+
+
+name="Paper, Sheet (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.1"
+
+
+
+name="Parachute", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="240"
+
+
+
+name="PC System (Heavy 4)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="230"
+
+
+
+name="Pedometer (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Pen (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Pen Gun (Stack)", armour="-", duration="-", hit="Small Arms", dmg="5", range="Close", ammo="1", descriptors="Bleed, Loud", desc="", slug="40"
+
+
+
+name="Pencil (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.1"
+
+
+
+name="Pepper Spray", armour="-", duration="-", hit="1+Finesse", dmg="6", range="Close", ammo="3", descriptors="Choke, Inoffensive", desc="", slug="45"
+
+
+
+name="Phone, Smart", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="100"
+
+
+
+name="Piolet (Ice Axe)", armour="-", duration="-", hit="Brutal", dmg="5+Melee", range="Close", ammo="0", descriptors="Bleed", desc="", slug="38"
+
+
+
+name="Pipe Gun", armour="-", duration="-", hit="Long Arms", dmg="8/7", range="Short", ammo="1", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="140"
+
+
+
+name="Pistol, .22 Short Automatic", armour="-", duration="-", hit="Small Arms", dmg="5", range="Short", ammo="6", descriptors="Bleed, Loud", desc="", slug="56"
+
+
+
+name="Pistol, .25 Derringer", armour="-", duration="-", hit="Small Arms", dmg="5", range="Close", ammo="1", descriptors="Bleed, Loud, Stack", desc="", slug="40"
+
+
+
+name="Pistol, .25 Derringer (Stack)", armour="-", duration="-", hit="Small Arms", dmg="5", range="Close", ammo="1", descriptors="Bleed, Loud", desc="", slug="40"
+
+
+
+name="Pistol, .32 Automatic", armour="-", duration="-", hit="Small Arms", dmg="6", range="Short", ammo="8", descriptors="Bleed, Loud", desc="", slug="103"
+
+
+
+name="Pistol, .38 Automatic", armour="-", duration="-", hit="Small Arms", dmg="7", range="Short", ammo="8", descriptors="Bleed, Burst, Loud", desc="", slug="293"
+
+
+
+name="Pistol, .45 Automatic", armour="-", duration="-", hit="Small Arms", dmg="8", range="Short", ammo="7", descriptors="Bleed, Burst, Loud", desc="", slug="426"
+
+
+
+name="Pistol, 7.65mm Automatic", armour="-", duration="-", hit="Small Arms", dmg="6", range="Short", ammo="8", descriptors="Bleed, Burst, Loud", desc="", slug="185"
+
+
+
+name="Pistol, BB", armour="-", duration="-", hit="Small Arms", dmg="1", range="Short", ammo="1", descriptors="", desc="", slug="0"
+
+
+
+name="Pistol, Beretta M9", armour="-", duration="-", hit="Small Arms", dmg="7", range="Short", ammo="15", descriptors="Bleed, Loud", desc="", slug="193"
+
+
+
+name="Pistol, Glock 17 9mm Automatic", armour="-", duration="-", hit="Small Arms", dmg="7", range="Short", ammo="17", descriptors="Bleed, Burst, Loud", desc="", slug="363"
+
+
+
+name="Pistol, IMI Desert Eagle (.50AE)", armour="-", duration="-", hit="Small Arms", dmg="9", range="Short", ammo="7", descriptors="Bleed, High Caliber, Loud", desc="", slug="270"
+
+
+
+name="Pistol, Model P08 Luger (7.65mm)", armour="-", duration="-", hit="Small Arms", dmg="7", range="Short", ammo="8", descriptors="Bleed, Loud", desc="", slug="163"
+
+
+
+name="Plastic C-4", armour="-", duration="-", hit="None", dmg="20", range="Close", ammo="1", descriptors="Area, Breach, Loud, Trap", desc="", slug="5683"
+
+
+
+name="Playing Cards, Deck", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Pony", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="125"
+
+
+
+name="Portable Oxygen Unit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="70"
+
+
+
+name="Portable Oxygen Unit (1 use)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="70"
+
+
+
+name="Portable Satellite Antenna (Large, Heavy 4)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2000"
+
+
+
+name="Potassium Iodide (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="The Potassium iodide pills procure a bonus when stabilizing or healing a character that have suffer minor radiation. It can also be used as a prevention before accessing a radiated zone.", slug="5"
+
+
+
+name="Projectiles Pouch", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Can carry 20 projectiles.", slug="7"
+
+
+
+name="Projectiles Pouch (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="7"
+
+
+
+name="Projector", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="140"
+
+
+
+name="Propane, Small Tank", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Propane can be used for heating and cooking.", slug="2"
+
+
+
+name="Propane, Tank (Heavy 3)", armour="-", duration="1 Chapter", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Propane can be used for heating and cooking.", slug="8"
+
+
+
+name="Prybar", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="4"
+
+
+
+name="Radiation Pills (1)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="The radiation pills procure a bonus when stabilizing or healing a character that have suffer radiation. It can also be used as a prevention before accessing a radiated zone.", slug="5"
+
+
+
+name="Radio Jammer", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="150"
+
+
+
+name="Radio, CB", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="This kind of radio have a maximum range of 18km.", slug="150"
+
+
+
+name="Radio, Ham", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="This kind of radio have a maximum range of 15km.", slug="90"
+
+
+
+name="Ragged", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="5"
+
+
+
+name="Rapier", armour="-", duration="-", hit="3+Finesse", dmg="5", range="Close", ammo="0", descriptors="Bleed, Large", desc="", slug="45"
+
+
+
+name="Rat", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Ration and Water (1 day) (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="It’s what is needed to survive for a day.", slug="1"
+
+
+
+name="Razor", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="12"
+
+
+
+name="Razor Blade", armour="-", duration="-", hit="Finesse", dmg="1", range="Close", ammo="0", descriptors="Bleed", desc="", slug="2"
+
+
+
+name="Recoil Pad", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Reduce the recoil when firing more than one shot in a round with Long Arms or Military Weapons. Reduce the penalty by 1 with firing multiple shot.", slug="30"
+
+
+
+name="Red Dot", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Procure a bonus when firing at Close or Short Range. Cannot be used with a Holographic Sight.", slug="24"
+
+
+
+name="Red Dot (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="24"
+
+
+
+name="Reinforced Boots", armour="1", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Boots only protect feet and not all the legs. It can only be used when the feet are the target of the damage.", slug="30"
+
+
+
+name="Reinforced Clothing", armour="1", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="50"
+
+
+
+name="Reinforced Gloves", armour="1", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Gloves only protect hands and not all the arms. It can only be used when the hands are the target of the damage.", slug="20"
+
+
+
+name="Religious Item", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="10"
+
+
+
+name="Retractable  Stick", armour="-", duration="-", hit="1+Brutal", dmg="3+Muscular", range="Close", ammo="0", descriptors="Blunt", desc="", slug="9"
+
+
+
+name="Retractable Stick", armour="-", duration="-", hit="1+Brutal", dmg="3+Melee", range="Close", ammo="0", descriptors="Blunt", desc="", slug="9"
+
+
+
+name="Revealing", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="10"
+
+
+
+name="Revolver, .32", armour="-", duration="-", hit="Small Arms", dmg="6", range="Short", ammo="6", descriptors="Bleed, Loud", desc="", slug="97"
+
+
+
+name="Revolver, .357", armour="-", duration="-", hit="Small Arms", dmg="7", range="Short", ammo="6", descriptors="Bleed, Loud", desc="", slug="154"
+
+
+
+name="Revolver, .357 Magnum", armour="-", duration="-", hit="Small Arms", dmg="8", range="Short", ammo="6", descriptors="Bleed, Loud", desc="", slug="230"
+
+
+
+name="Revolver, .38", armour="-", duration="-", hit="Small Arms", dmg="7", range="Short", ammo="6", descriptors="Bleed, Loud", desc="", slug="154"
+
+
+
+name="Revolver, .44 Magnum", armour="-", duration="-", hit="Small Arms", dmg="8", range="Short", ammo="6", descriptors="Bleed, Loud", desc="", slug="230"
+
+
+
+name="Revolver, .45", armour="-", duration="-", hit="Small Arms", dmg="8", range="Short", ammo="6", descriptors="Bleed, Loud", desc="", slug="230"
+
+
+
+name="Revolver, 7.65mm", armour="-", duration="-", hit="Small Arms", dmg="6", range="Short", ammo="6", descriptors="Bleed, Loud", desc="", slug="97"
+
+
+
+name="Revolver, 9mm", armour="-", duration="-", hit="Small Arms", dmg="7", range="Short", ammo="6", descriptors="Bleed, Loud", desc="", slug="154"
+
+
+
+name="Revolver, BB", armour="-", duration="-", hit="Small Arms", dmg="1", range="Short", ammo="5", descriptors="", desc="", slug="0"
+
+
+
+name="Rifle, .22 Bolt-Action", armour="-", duration="-", hit="2+Long Arms", dmg="6", range="Long", ammo="6", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="262"
+
+
+
+name="Rifle, .30 Lever-Action Carbine", armour="-", duration="-", hit="2+Long Arms", dmg="8", range="Long", ammo="6", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="622"
+
+
+
+name="Rifle, .30-06 Bolt-Action", armour="-", duration="-", hit="2+Long Arms", dmg="10", range="Long", ammo="5", descriptors="Bleed, High Caliber, Large, Loud, Two-handed", desc="", slug="788"
+
+
+
+name="Rifle, .30-06 Semi-Automtic", armour="-", duration="-", hit="2+Long Arms", dmg="10", range="Long", ammo="5", descriptors="Bleed, Burst, High Caliber, Large, Loud, Two-handed", desc="", slug="2363"
+
+
+
+name="Rifle, .444 Marlin", armour="-", duration="-", hit="2+Long Arms", dmg="10", range="Long", ammo="5", descriptors="Bleed, High Caliber, Large, Loud, Two-handed", desc="", slug="788"
+
+
+
+name="Rifle, BB", armour="-", duration="-", hit="1+Long Arms", dmg="0", range="Short", ammo="1", descriptors="Large, Two-handed", desc="", slug="0"
+
+
+
+name="Rifle, Elephant Gun (138mm)", armour="-", duration="-", hit="2+Long Arms", dmg="12", range="Long", ammo="2", descriptors="Bleed, High Caliber, Large, Loud, Two-handed", desc="", slug="1244"
+
+
+
+name="Rifle, Single Shot", armour="-", duration="-", hit="2+Long Arms", dmg="6", range="Long", ammo="1", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="226"
+
+
+
+name="Rifle, SKS Carbine (7.62x39mm)", armour="-", duration="-", hit="2+Long Arms", dmg="9", range="Long", ammo="8", descriptors="Bleed, High Caliber, Large, Loud, Two-handed", desc="", slug="623"
+
+
+
+name="Rock", armour="-", duration="-", hit="Brutal", dmg="3+Melee", range="Short", ammo="1", descriptors="Blunt, Heavy 2", desc="", slug="0"
+
+
+
+name="Rock (Stack)", armour="-", duration="-", hit="Brutal or Finesse", dmg="1+Melee", range="Short", ammo="1", descriptors="Blunt", desc="", slug="0"
+
+
+
+name="Rock, Heavy", armour="-", duration="-", hit="Brutal", dmg="5+Melee", range="Short", ammo="1", descriptors="Blunt, Heavy 4", desc="", slug="0"
+
+
+
+name="Rocket", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="10"
+
+
+
+name="Rocket Launcher", armour="-", duration="-", hit="Long Arms", dmg="16", range="Long", ammo="4", descriptors="Area, Breach, Large, Loud, Rocket, Two-handed", desc="", slug="2611"
+
+
+
+name="Rope (150m)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="This rope can be useful to attach stuffs but not much to climb even if it can works.", slug="34"
+
+
+
+name="Rope (50 feet)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="34"
+
+
+
+name="Rope, Climbing (150m)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="This rope should be used to climb. It’s not the best type of rope to attach stuffs.", slug="74"
+
+
+
+name="Safe (500 lbs) (Heavy 275)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="248"
+
+
+
+name="Safe, personal (Heavy 4)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="30"
+
+
+
+name="Salt, 1kg", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Scalpel (Stack)", armour="-", duration="-", hit="1+Finesse", dmg="Melee", range="Close", ammo="0", descriptors="Bleed", desc="", slug="2"
+
+
+
+name="Scissors", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="5"
+
+
+
+name="Scuba Gear", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="48"
+
+
+
+name="Searchlight", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="24"
+
+
+
+name="Seeds", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="3"
+
+
+
+name="Sex Toy", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="5"
+
+
+
+name="Shield, Ballistic (Large, Heavy 2)", armour="4", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="320"
+
+
+
+name="Shield, Homemade (Large, Heavy 3)", armour="3", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="120"
+
+
+
+name="Shiv (Stack)", armour="-", duration="-", hit="Finesse", dmg="2", range="Close", ammo="0", descriptors="Bleed, Fragile", desc="", slug="2"
+
+
+
+name="Shotgun, 12-gauge (Pump)", armour="-", duration="-", hit="1+Long Arms", dmg="8/7", range="Short/Long", ammo="5", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="295"
+
+
+
+name="Shotgun, 12-gauge (semi-auto)", armour="-", duration="-", hit="1+Long Arms", dmg="8/7", range="Short/Long", ammo="5", descriptors="Bleed, Burst, Large, Loud, Two-handed", desc="", slug="689"
+
+
+
+name="Shotgun, 12-gauge Benelli M3", armour="-", duration="-", hit="1+Long Arms", dmg="8/7", range="Short/Long", ammo="7", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="312"
+
+
+
+name="Shotgun, 12-gauge SPAS", armour="-", duration="-", hit="1+Long Arms", dmg="8/7", range="Short/Long", ammo="8", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="321"
+
+
+
+name="Shotgun, Double-Barrel", armour="-", duration="-", hit="1+Long Arms", dmg="8/7", range="Short/Long", ammo="2", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="270"
+
+
+
+name="Shotgun, Sawed-Off", armour="-", duration="-", hit="Long Arms", dmg="8", range="Short", ammo="2", descriptors="Bleed, Loud", desc="", slug="205"
+
+
+
+name="Shoulder Bag, Heavy Canvas", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="14"
+
+
+
+name="Shovel", armour="-", duration="-", hit="Brutal", dmg="5+Melee", range="Close", ammo="0", descriptors="Blunt, Large, Two-handed", desc="", slug="13"
+
+
+
+name="Shovel (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="A shovel can used as a decent weapon. See the weapons' section for more information.", slug="4"
+
+
+
+name="Shovel, Folding", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="9"
+
+
+
+name="Shuriken (Stack)", armour="-", duration="-", hit="Finesse", dmg="3", range="Short", ammo="3", descriptors="Bleed, Burst", desc="", slug="22"
+
+
+
+name="Signal Gun", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="20"
+
+
+
+name="Signal Gun Ammunition (Stack)", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Silencer/Suppressor", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Help to stay concealed when firing.", slug="200"
+
+
+
+name="Silencer/Suppressor, homemade", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Help to stay concealed when firing. Can only be use for one encounter.", slug="12"
+
+
+
+name="Sketch Pad", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Skis and Boots", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="110"
+
+
+
+name="Sledgehammer", armour="-", duration="-", hit="1+Brutal", dmg="7+Melee", range="Close", ammo="0", descriptors="Blunt, Breach, Large, Heavy 2, Two-handed", desc="", slug="188"
+
+
+
+name="Sleeping Bag, Polar", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="40"
+
+
+
+name="Sleeping Bag, Poly/Cotton", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="6"
+
+
+
+name="Sleeping Pill (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="3"
+
+
+
+name="Slingshot", armour="-", duration="-", hit="Finesse", dmg="2", range="Short", ammo="1", descriptors="Two-handed", desc="", slug="1"
+
+
+
+name="Slingshot Ball (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Used instead of small stones. It adds 1 impact.", slug="0.1"
+
+
+
+name="Slingshot Stone (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0"
+
+
+
+name="Smart Phone", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="100"
+
+
+
+name="SMG, Heckler & Koch MP5 (9mm)", armour="-", duration="-", hit="Small Arms", dmg="7", range="Short", ammo="30", descriptors="Bleed, FA, Loud, Two-handed", desc="", slug="412"
+
+
+
+name="SMG, Ingram MAC-11 (9mm)", armour="-", duration="-", hit="Small Arms", dmg="7", range="Short", ammo="32", descriptors="Bleed, FA, Loud", desc="", slug="478"
+
+
+
+name="SMG, Skorpion (7.65mm)", armour="-", duration="-", hit="Small Arms", dmg="7", range="Short", ammo="20", descriptors="Bleed, FA, Loud, Two-handed", desc="", slug="343"
+
+
+
+name="SMG, Uzi (9mm)", armour="-", duration="-", hit="Small Arms", dmg="7", range="Short", ammo="32", descriptors="Bleed, FA, Loud, Two-handed", desc="", slug="425"
+
+
+
+name="Snake", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="20"
+
+
+
+name="Sniper Rifle, Barrett Model 82 (.50 BMG)", armour="-", duration="-", hit="2+Long Arms", dmg="11", range="Long", ammo="11", descriptors="Bleed, High Caliber, Large, Loud, Two-handed", desc="", slug="1228"
+
+
+
+name="Sniper Rifle, Galil Sniper (7.62x51mm)", armour="-", duration="-", hit="3+Long Arms", dmg="9", range="Long", ammo="20", descriptors="Bleed, High Caliber, Large, Loud, Two-handed", desc="", slug="1640"
+
+
+
+name="Snowshoes", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="60"
+
+
+
+name="Solar Batteries Charger", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Can recharge up to 3 batteries or a car battery every day of sunlight.", slug="35"
+
+
+
+name="Solar Panel, Foldable (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Can recharge up to 9 batteries or 3 car batteries each day of sunlight.", slug="315"
+
+
+
+name="Spear", armour="-", duration="-", hit="2+Brutal", dmg="5+Melee", range="Close/Short", ammo="0", descriptors="Large, Bleed, Reach, Two-handed", desc="", slug="171"
+
+
+
+name="Speed Loader", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Can only be used by revolver. Reloading a revolver become a Quick Action.", slug="20"
+
+
+
+name="Spray and Lighter", armour="-", duration="-", hit="Small Arms", dmg="6", range="Close", ammo="2", descriptors="Burn, Two-handed", desc="", slug="43"
+
+
+
+name="Staff", armour="-", duration="-", hit="2+Brutal", dmg="3(4)+Melee", range="Close", ammo="0", descriptors="Blunt, Large, Versatile", desc="", slug="32"
+
+
+
+name="Standard", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="10"
+
+
+
+name="Steel Pulley", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="7"
+
+
+
+name="Stone (Stack)", armour="-", duration="-", hit="Brutal or Finesse", dmg="1+Melee", range="Short", ammo="1", descriptors="Blunt", desc="", slug="0"
+
+
+
+name="Straightjacket", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="40"
+
+
+
+name="Stun Baton", armour="-", duration="-", hit="Finesse", dmg="6", range="Close", ammo="3", descriptors="Battery, Inoffensive, Stun", desc="", slug="149"
+
+
+
+name="Sugar, 1kg", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.8"
+
+
+
+name="Surgery Kit (20 uses)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="60"
+
+
+
+name="Surgery Kit, Small (10 uses)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="40"
+
+
+
+name="Survival Kit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="32"
+
+
+
+name="SVT-40", armour="-", duration="-", hit="1+ Long Arms", dmg="7", range="Long", ammo="10", descriptors="Bleed, Burst, Large, Loud, Two-handed", desc="", slug="540"
+
+
+
+name="Switchblade (Stack)", armour="-", duration="-", hit="Finesse", dmg="2", range="Close", ammo="0", descriptors="Bleed", desc="", slug="2"
+
+
+
+name="Sword, Heavy", armour="-", duration="-", hit="1+Brutal", dmg="7+Melee", range="Close", ammo="0", descriptors="Bleed, Large, Two-handed", desc="", slug="150"
+
+
+
+name="Syringe, Clean", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="3"
+
+
+
+name="Tablet", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="110"
+
+
+
+name="Tablet, Writing", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Tactical Baton", armour="-", duration="-", hit="Brutal", dmg="3+Melee", range="Close", ammo="0", descriptors="Blunt", desc="", slug="6"
+
+
+
+name="Tarpaulin, Large", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="80"
+
+
+
+name="Taser (dart)", armour="-", duration="-", hit="Small Arms", dmg="6", range="Short", ammo="0", descriptors="Battery, Inoffensive, Stun", desc="", slug="162"
+
+
+
+name="Taser (touch)", armour="-", duration="-", hit="Finesse", dmg="5", range="Close", ammo="3", descriptors="Battery, Inoffensive, Stun", desc="", slug="86"
+
+
+
+name="Telescope, Large (Large, Heavy 2)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="130"
+
+
+
+name="Telescope, Small", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="24"
+
+
+
+name="Telescopic Sight", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Remove the penalty when firing at Long Range or procure a bonus if the penalty was already removed by another accessory.", slug="110"
+
+
+
+name="Tent, 1 person", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="65"
+
+
+
+name="Tent, 2 persons", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="95"
+
+
+
+name="Tent, 3 Persons (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="140"
+
+
+
+name="Tent, 4 Persons (Heavy 2) (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="180"
+
+
+
+name="Tent, 5 Persons (Heavy 2) (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="220"
+
+
+
+name="Tent, 6 Persons (Heavy 2) (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="260"
+
+
+
+name="Tent, Large Canopy (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="100"
+
+
+
+name="Tent, Medium Canopy (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="60"
+
+
+
+name="Tent, Small Canopy (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="44"
+
+
+
+name="Thermal Imaging Scope", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Remove the penalty when firing at Long Range or procure a bonus if the penalty was already removed by another accessory during the night.", slug="340"
+
+
+
+name="Throwing Knife (Stack)", armour="-", duration="-", hit="Finesse", dmg="3", range="Short", ammo="2", descriptors=" Bleed", desc="", slug="5"
+
+
+
+name="Throwing Spear", armour="-", duration="-", hit="Finesse", dmg="4+Melee", range="Short", ammo="1", descriptors="Bleed, Large", desc="", slug="19"
+
+
+
+name="Tie Wraps (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.1"
+
+
+
+name="Tinderbox", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Tire Iron", armour="-", duration="-", hit="Brutal", dmg="3+Melee", range="Close", ammo="0", descriptors="Blunt", desc="", slug="6"
+
+
+
+name="Tool Belt and Safety Strap", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="14"
+
+
+
+name="Tool Outfit (20 tools)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="60"
+
+
+
+name="Tool, Electrician Kit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="80"
+
+
+
+name="Tool, Home Kit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="60"
+
+
+
+name="Tool, Jeweller Kit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="64"
+
+
+
+name="Tool, Outfit Kit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="60"
+
+
+
+name="Tool, Sewing Kit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="18"
+
+
+
+name="Tool, Watchmakerâ€™s Kit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="32"
+
+
+
+name="Tool, Welderâ€™s Kit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="105"
+
+
+
+name="Torch, homemade", armour="-", duration="1 Scene", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="A torch can procure light for the duration of a scene. Note that torches can be fire hazards.", slug="1"
+
+
+
+name="Trap, Bear", armour="-", duration="-", hit="Survival", dmg="4", range="Close", ammo="0", descriptors="Bleed", desc="", slug="24"
+
+
+
+name="Trap, Hunting", armour="-", duration="-", hit="Survival", dmg="3", range="Close", ammo="0", descriptors="Bleed", desc="", slug="10"
+
+
+
+name="Tripod", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Remove the penalty when firing at Long Range or procure a bonus if the penalty was already removed by another accessory.", slug="50"
+
+
+
+name="Truncheon", armour="-", duration="-", hit="1+Finesse", dmg="3+Melee", range="Close", ammo="0", descriptors="Blunt", desc="", slug="6"
+
+
+
+name="Turntable", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="130"
+
+
+
+name="Type 99 Arisaka", armour="-", duration="-", hit="1+ Long Arms", dmg="7", range="Long", ammo="5", descriptors="Bleed, Large, Loud, Two-handed", desc="", slug="203"
+
+
+
+name="Umbrella (Large)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="7"
+
+
+
+name="Unarmed", armour="-", duration="-", hit="Brutal/Finesse", dmg="Melee", range="Close", ammo="0", descriptors="Blunt", desc="", slug="0"
+
+
+
+name="Uniform", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="An uniform that allow to be identified as part of a group. It can be a police uniform, military uniform, medicine white coat, scientific lab coat or any other one. Choose one when buying this style descriptor.", slug="50"
+
+
+
+name="Walkie-Talkie", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="35"
+
+
+
+name="Wallet", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="2"
+
+
+
+name="Warm", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Give a resistance bonus against the cold.", slug="40"
+
+
+
+name="Watch, Automatic", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="80"
+
+
+
+name="Watch, Smart", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="60"
+
+
+
+name="Watch, Standard", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="30"
+
+
+
+name="Watchmakerâ€™s Tool Kit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="32"
+
+
+
+name="Water Bag (1 gallon)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="3"
+
+
+
+name="Water Bag (5 gallon) (Heavy 5)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="12"
+
+
+
+name="Water, Bottle", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="0.5"
+
+
+
+name="Welderâ€™s Kit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="105"
+
+
+
+name="Wheelchair (Heavy 5)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="80"
+
+
+
+name="Whistle (Stack)", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="1"
+
+
+
+name="Wine, Cheap Bottle", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="3"
+
+
+
+name="Wine, Fancy Bottle", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="30"
+
+
+
+name="Wingsuit", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="", slug="300"
+
+
+
+name="Winter modification", armour="-", duration="-", hit="-", dmg="", range="-", ammo="0", descriptors="", desc="Give a resistance bonus against the cold.", slug="40"
+
+
+
+name="Wood Axe", armour="-", duration="-", hit="1+Brutal", dmg="6+Melee", range="Close", ammo="0", descriptors="Breach, Bleed, Large, Two-handed", desc="", slug="150"
+
