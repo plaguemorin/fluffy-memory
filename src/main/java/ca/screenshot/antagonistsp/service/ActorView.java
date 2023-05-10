@@ -190,6 +190,28 @@ public class ActorView {
                     .sorted(Comparator.comparingInt(o -> MasteryTypeToPriority(o.mastery.type)))
                     .toList();
 
+            ret.healthy_movement = new ActorMovement();
+            ret.healthy_movement.crawl = 1;
+            ret.healthy_movement.combat = 8 + (ret.skills.acrobatics);
+            ret.healthy_movement.run = 8 + (ret.skills.athletics);
+            ret.healthy_movement.swim = Math.max(1, 2 + (ret.skills.athletics / 2));
+            ret.healthy_movement.travel = Math.max(1, 2 + (ret.skills.athletics / 2));
+
+            ret.half_movement = new ActorMovement();
+            ret.half_movement.crawl = 1;
+            ret.half_movement.combat = Math.round(ret.healthy_movement.combat / 2.f);
+            ret.half_movement.run = Math.round(ret.healthy_movement.run / 2.f);
+            ret.half_movement.swim = Math.round(ret.healthy_movement.swim / 2.f);
+            ret.half_movement.travel = Math.round(ret.healthy_movement.travel / 2.f);
+
+            ret.initiative = ret.skills.sleightOfHands;
+            ret.brutalHit = ret.skills.brutalFighting;
+            ret.finesseHit = ret.skills.finesseFighting;
+            ret.meleeImpact = ret.skills.muscular;
+            ret.dodge = ret.skills.acrobatics;
+            ret.resistance = ret.skills.athletics;
+            ret.health = 4;
+
             return ret;
         });
     }

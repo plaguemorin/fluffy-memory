@@ -21,4 +21,15 @@ public class ActorDetailView {
 
     public int totalCost;
     public int availableXp;
+
+    public ActorMovement healthy_movement;
+    public ActorMovement half_movement;
+
+    public int initiative;
+    public int brutalHit;
+    public int finesseHit;
+    public int meleeImpact;
+    public int dodge;
+    public int resistance;
+    public int health;
 }

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head th:fragment="head(title)">
-    <meta charset="UTF-8"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title th:replace="${title}">Title</title>
 
     <link th:href="@{/webjars/bootstrap/5.2.3/css/bootstrap.min.css}" rel="stylesheet" />
-    <link href="/main.css" rel="stylesheet" />
-
-    <script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.min.js}"></script>
+    <link href="/css/main.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -23,22 +23,26 @@
 </div>
 
 <!--/* The value passed from calling template will be inserted in this element */-->
-<div class="container" th:fragment="content(value)" th:insert="${value}">
-    <!-- ============================================================================ -->
-    <!-- This content is only used for static prototyping purposes (natural templates)-->
-    <!-- and is therefore entirely optional.                                          -->
-    <!-- ============================================================================ -->
-    <h1>Static content for prototyping purposes only</h1>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Praesent scelerisque neque neque, ac elementum quam dignissim interdum.
-        Phasellus et placerat elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Praesent scelerisque neque neque, ac elementum quam dignissim interdum.
-        Phasellus et placerat elit.
-    </p>
+<div class="container" th:fragment="content(value)">
+    <div th:insert="${value}">
+        <!-- ============================================================================ -->
+        <!-- This content is only used for static prototyping purposes (natural templates)-->
+        <!-- and is therefore entirely optional.                                          -->
+        <!-- ============================================================================ -->
+        <h1>Static content for prototyping purposes only</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent scelerisque neque neque, ac elementum quam dignissim interdum.
+            Phasellus et placerat elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Praesent scelerisque neque neque, ac elementum quam dignissim interdum.
+            Phasellus et placerat elit.
+        </p>
+    </div>
+
+    <script th:src="@{/webjars/bootstrap/5.2.3/js/bootstrap.min.js}"></script>
+    <script src="/js/roll.js"></script>
 </div>
 
-<!--/*  Multiple fragments may be defined in one file */-->
 <div th:fragment="footer" th:align="center">
     &copy; <span th:text="${#temporals.format(#temporals.createNow(), 'yyyy')}">2017</span>
     <span>My Awesome App</span>

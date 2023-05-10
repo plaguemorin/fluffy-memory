@@ -10,9 +10,6 @@
 <header th:insert="layout/default :: header(~{ :: .breadcrumb})">
   <ol class="breadcrumb container">
     <li class="breadcrumb-item"><a href="/">Home</a></li>
-    <li class="breadcrumb-item"><a href="/actor/">Actors</a></li>
-    <li class="breadcrumb-item active" aria-current="page"><a href="/actor/0" th:text="${actor.displayName}"
-                                                              th:href="'/actor/' + ${actor.id}">Actor Name</a></li>
   </ol>
 </header>
 
