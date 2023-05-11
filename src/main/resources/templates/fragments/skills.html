@@ -6,53 +6,9 @@
 </head>
 <body>
 
-<div th:fragment="diceroll(skill)" class="text-center" th:with="did='rolling_' + ${#strings.randomAlphanumeric(10)}">
-
-
-    <table class="table table-borderless" th:id="${did}">
-        <thead>
-        <tr class="table-header">
-            <th scope="col" class="bg-danger" >For Every 10 Worst</th>
-            <th scope="col" class="bg-danger" >2+ under rating</th>
-            <th scope="col" class="bg-danger" >1 under rating</th>
-            <th scope="col" class="bg-info"   >Equal Rating</th>
-            <th scope="col" class="bg-success">1 over rating</th>
-            <th scope="col" class="bg-success">2+ over rating</th>
-            <th scope="col" class="bg-success">For Every 10 Better</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>+1 Catastrophic Effect</td>
-            <td>
-                <button class="btn btn-outline-danger"  th:text="${skill + 4}" data-roll-rating="-4" th:data-roll-replace="${did}">Worst Rating (5)</button>
-                <button class="btn btn-outline-danger"  th:text="${skill + 3}" data-roll-rating="-3" th:data-roll-replace="${did}">Worst Rating (4)</button>
-                <button class="btn btn-outline-danger"  th:text="${skill + 2}" data-roll-rating="-2" th:data-roll-replace="${did}">Worst Rating (3)</button>
-            </td>
-            <td><button class="btn btn-outline-danger"  th:text="${skill + 1}" data-roll-rating="-1" th:data-roll-replace="${did}">Worst Rating (2)</button></td>
-            <td><button class="btn btn-info"            th:text="${skill    }" data-roll-rating="0" th:data-roll-replace="${did}">Equal Rating (0)</button></td>
-            <td><button class="btn btn-outline-success" th:text="${skill - 1}" data-roll-rating="1" th:data-roll-replace="${did}">Better Rating (2)</button></td>
-            <td>
-                <button class="btn btn-outline-success" th:text="${skill - 2}" data-roll-rating="2" th:data-roll-replace="${did}">Better Rating (5)</button>
-                <button class="btn btn-outline-success" th:text="${skill - 3}" data-roll-rating="3" th:data-roll-replace="${did}">Better Rating (4)</button>
-                <button class="btn btn-outline-success" th:text="${skill - 4}" data-roll-rating="4" th:data-roll-replace="${did}">Better Rating (3)</button>
-            </td>
-            <td>+1 Exceptional Effect</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td colspan="2" class="bg-danger">Keep Lowest Results</td>
-            <td class="bg-info">Keep Result</td>
-            <td colspan="2" class="bg-success">Keep Highest Results</td>
-            <td></td>
-        </tr>
-        </tbody>
-    </table>
-
-</div>
 
 <table>
-<tr th:classappend="'skill-' + ${type}" th:fragment="skillrow(type, level, skill)">
+<tr th:fragment="skillrow(actorid, type, level, skill)">
     <th scope="row" th:text="${type}">NAME</th>
     <td th:text="${level}">0</td>
     <td th:text="${skill}">0</td>
@@ -60,40 +16,45 @@
         <button class="btn btn-primary"
                 type="button"
                 data-bs-toggle="modal"
-                th:data-bs-target="'#' + ${did}">Roll!</button>
-
-        <div class="modal fade" tabindex="-1" role="dialog" th:aria-labelledby="${did} + 'title'" aria-hidden="true" th:id="${did}">
-            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" th:id="${did} + 'title'">
-                            Choose difficulty for <span th:text="${type}" class="skill"></span> check
-                        </h5>
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-
-                    <div class="modal-body" th:insert="~{ :: diceroll(${skill}) }">
-
-                    </div>
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+                th:id="${did}"
+                th:href="'/actor/' + ${actorid} + '/roll/' + ${type} + '/'"
+                data-bs-target="#roll">Roll!</button>
     </td>
 </tr>
 </table>
 
-<div th:fragment="skill(levels, skill)">
+<div th:fragment="skill(actor)">
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="roll">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('roll').addEventListener('show.bs.modal', event => {
+            const buttonElement = event.relatedTarget;
+            const url = buttonElement.getAttribute('href');
+
+            const modalData = document
+                .getElementById('roll')
+                .querySelector('div.modal-content');
+
+            fetch(url)
+                .then(res => res.text())
+                .then(html => {
+                    modalData.innerHTML = html;
+                });
+        });
+
+        document.getElementById('roll').addEventListener('hide.bs.modal', event => {
+            event.target.querySelector("div[class='modal-content']")
+                .innerHTML = '';
+        });
+    </script>
+
     <table class="table">
         <thead>
         <tr class="table-header">
-            <th scope="col">Category</th>
             <th scope="col">Skill</th>
             <th scope="col">Level</th>
             <th scope="col">Rating</th>
@@ -102,33 +63,33 @@
         </thead>
 
         <tbody>
-        <tr><th colspan="5" class="text-center">Physical</th></tr>
-        <tr th:replace="~{ :: skillrow('Acrobatics', ${levels.acrobatics}, ${skill.acrobatics})}"></tr>
-        <tr th:replace="~{ :: skillrow('Athletics', ${levels.athletics}, ${skill.athletics})}"></tr>
-        <tr th:replace="~{ :: skillrow('Brutal Fighting', ${levels.brutalFighting}, ${skill.brutalFighting})}"></tr>
-        <tr th:replace="~{ :: skillrow('Finesse Fighting', ${levels.finesseFighting}, ${skill.finesseFighting})}"></tr>
-        <tr th:replace="~{ :: skillrow('Muscular', ${levels.muscular}, ${skill.muscular})}"></tr>
+        <tr><th colspan="4" class="text-center" th:text="#{}">Physical</th></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Acrobatics', ${levels.acrobatics}, ${skill.acrobatics})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Athletics', ${levels.athletics}, ${skill.athletics})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Brutal Fighting', ${levels.brutalFighting}, ${skill.brutalFighting})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Finesse Fighting', ${levels.finesseFighting}, ${skill.finesseFighting})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Muscular', ${levels.muscular}, ${skill.muscular})}"></tr>
 
         <tr><th colspan="5" class="text-center">Action</th></tr>
-        <tr th:replace="~{ :: skillrow('Drive', ${levels.drive}, ${skill.drive})}"></tr>
-        <tr th:replace="~{ :: skillrow('Long Arms', ${levels.longArms}, ${skill.longArms})}"></tr>
-        <tr th:replace="~{ :: skillrow('Sleight of Hands', ${levels.sleightOfHands}, ${skill.sleightOfHands})}"></tr>
-        <tr th:replace="~{ :: skillrow('Small Arms', ${levels.smallArms}, ${skill.smallArms})}"></tr>
-        <tr th:replace="~{ :: skillrow('Stealth', ${levels.stealth}, ${skill.stealth})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Drive', ${levels.drive}, ${skill.drive})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Long Arms', ${levels.longArms}, ${skill.longArms})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Sleight of Hands', ${levels.sleightOfHands}, ${skill.sleightOfHands})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Small Arms', ${levels.smallArms}, ${skill.smallArms})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Stealth', ${levels.stealth}, ${skill.stealth})}"></tr>
 
         <tr><th colspan="5" class="text-center">Social</th></tr>
-        <tr th:replace="~{ :: skillrow('Charm', ${levels.charm}, ${skill.charm})}"></tr>
-        <tr th:replace="~{ :: skillrow('Deception', ${levels.deception}, ${skill.deception})}"></tr>
-        <tr th:replace="~{ :: skillrow('Insight', ${levels.insight}, ${skill.insight})}"></tr>
-        <tr th:replace="~{ :: skillrow('Intimidate', ${levels.intimidate}, ${skill.intimidate})}"></tr>
-        <tr th:replace="~{ :: skillrow('Persuade', ${levels.persuade}, ${skill.persuade})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Charm', ${levels.charm}, ${skill.charm})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Deception', ${levels.deception}, ${skill.deception})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Insight', ${levels.insight}, ${skill.insight})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Intimidate', ${levels.intimidate}, ${skill.intimidate})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Persuade', ${levels.persuade}, ${skill.persuade})}"></tr>
 
         <tr><th colspan="5" class="text-center">Mental</th></tr>
-        <tr th:replace="~{ :: skillrow('Investigate', ${levels.investigate}, ${skill.investigate})}"></tr>
-        <tr th:replace="~{ :: skillrow('Knowledge', ${levels.knowledge}, ${skill.knowledge})}"></tr>
-        <tr th:replace="~{ :: skillrow('Medicine', ${levels.medicine}, ${skill.medicine})}"></tr>
-        <tr th:replace="~{ :: skillrow('Survival', ${levels.survival}, ${skill.survival})}"></tr>
-        <tr th:replace="~{ :: skillrow('Technical', ${levels.technical}, ${skill.technical})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Investigate', ${levels.investigate}, ${skill.investigate})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Knowledge', ${levels.knowledge}, ${skill.knowledge})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Medicine', ${levels.medicine}, ${skill.medicine})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Survival', ${levels.survival}, ${skill.survival})}"></tr>
+        <tr th:replace="~{ :: skillrow(${actor.id}, 'Technical', ${levels.technical}, ${skill.technical})}"></tr>
 
         </tbody>
     </table>

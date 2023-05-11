@@ -917,7 +917,7 @@ public class TestBean {
         ).toList());
 
         Actor alexTerrieur = new Actor();
-        alexTerrieur.id = UUID.randomUUID();
+        alexTerrieur.id = UUID.fromString("7ea9657a-ce9d-4c45-b92e-9156ee85a2d8");
         alexTerrieur.name = "Alex Terrieur";
         alexTerrieur.age = 33;
         alexTerrieur.ethnicity = "QC";

@@ -1,5 +1,6 @@
 package ca.screenshot.antagonistsp.service;
 
+import ca.screenshot.antagonistsp.Constants;
 import ca.screenshot.antagonistsp.entity.*;
 import ca.screenshot.antagonistsp.repository.Actors;
 import ca.screenshot.antagonistsp.repository.Categories;
@@ -43,63 +44,64 @@ public class ActorView {
         return modifier;
     }
 
-    public static Skills MakeSkills(Attributes attributes, Skills skillsLevel) {
-        Skills skills = new Skills();
+    public static Map<UUID, Skill> MakeSkills(Attributes attributes, Map<UUID, Skill> skillsLevel) {
+        return Skill.Add(Map.ofEntries(
+                // Physical Skills
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_ACROBATICS, attributes.agility + attributes.constitution, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_ATHLETICS, attributes.constitution + attributes.strength, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_BRUTALFIGHTING, attributes.agility + attributes.strength, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_FINESSEFIGHTING, attributes.agility + attributes.reflex, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_MUSCULAR, attributes.constitution + attributes.strength, false),
 
-        // Physical Skills
-        skills.acrobatics = attributes.agility + attributes.constitution + skillsLevel.acrobatics;
-        skills.athletics = attributes.constitution + attributes.strength + skillsLevel.athletics;
-        skills.brutalFighting = attributes.agility + attributes.strength + skillsLevel.brutalFighting;
-        skills.finesseFighting = attributes.agility + attributes.reflex + skillsLevel.finesseFighting;
-        skills.muscular = attributes.constitution + attributes.strength + skillsLevel.muscular;
+                // Action Skills
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_DRIVE, attributes.perception + attributes.reflex, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_LONGARMS, attributes.constitution + attributes.perception, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_SLEIGHTOFHANDS, attributes.agility + attributes.reflex, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_SMALLARMS, attributes.perception + attributes.reflex, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_STEALTH, attributes.agility + attributes.intelligence, false),
 
-        // Action Skills
-        skills.drive = attributes.perception + attributes.reflex + skillsLevel.drive;
-        skills.longArms = attributes.constitution + attributes.perception + skillsLevel.longArms;
-        skills.sleightOfHands = attributes.agility + attributes.reflex + skillsLevel.sleightOfHands;
-        skills.smallArms = attributes.perception + attributes.reflex + skillsLevel.smallArms;
-        skills.stealth = attributes.agility + attributes.intelligence + skillsLevel.stealth;
+                // Social Skills
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_CHARM, attributes.charisma + attributes.constitution, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_DECEPTION, attributes.charisma + attributes.intelligence, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_INSIGHT, attributes.charisma + attributes.perception, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_INTIMIDATE, attributes.charisma + attributes.strength, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_PERSUADE, attributes.charisma + attributes.reflex, false),
 
-        // Social Skills
-        skills.charm = attributes.charisma + attributes.constitution + skillsLevel.charm;
-        skills.deception = attributes.charisma + attributes.intelligence + skillsLevel.deception;
-        skills.insight = attributes.charisma + attributes.perception + skillsLevel.insight;
-        skills.intimidate = attributes.charisma + attributes.strength + skillsLevel.intimidate;
-        skills.persuade = attributes.charisma + attributes.reflex + skillsLevel.persuade;
-
-        // Mental Skills
-        skills.investigate = attributes.intelligence + attributes.perception + skillsLevel.investigate;
-        skills.knowledge = attributes.intelligence + attributes.reflex + skillsLevel.knowledge;
-        skills.medicine = attributes.agility + attributes.intelligence + skillsLevel.medicine;
-        skills.survival = attributes.constitution + attributes.perception + skillsLevel.survival;
-        skills.technical = attributes.intelligence + attributes.strength + skillsLevel.technical;
-
-        return skills;
+                // Mental Skills
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_INVESTIGATE, attributes.intelligence + attributes.perception, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_KNOWLEDGE, attributes.intelligence + attributes.reflex, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_MEDICINE, attributes.agility + attributes.intelligence, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_SURVIVAL, attributes.constitution + attributes.perception, false),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_TECHNICAL, attributes.intelligence + attributes.strength, false)
+        ), skillsLevel);
     }
 
-    private static Skills MakeSkills(ActorSkill actorSkill) {
-        Skills levels = new Skills();
-        levels.acrobatics = actorSkill.acrobatics;
-        levels.athletics = actorSkill.athletics;
-        levels.brutalFighting = actorSkill.brutalFighting;
-        levels.finesseFighting = actorSkill.finesseFighting;
-        levels.muscular = actorSkill.muscular;
-        levels.drive = actorSkill.drive;
-        levels.longArms = actorSkill.longArms;
-        levels.sleightOfHands = actorSkill.sleightOfHands;
-        levels.smallArms = actorSkill.smallArms;
-        levels.stealth = actorSkill.stealth;
-        levels.charm = actorSkill.charm;
-        levels.deception = actorSkill.deception;
-        levels.insight = actorSkill.insight;
-        levels.intimidate = actorSkill.intimidate;
-        levels.persuade = actorSkill.persuade;
-        levels.investigate = actorSkill.investigate;
-        levels.knowledge = actorSkill.knowledge;
-        levels.medicine = actorSkill.medicine;
-        levels.survival = actorSkill.survival;
-        levels.technical = actorSkill.technical;
-        return levels;
+    private static Map<UUID, Skill> MakeSkills(ActorSkill actorSkill) {
+        return Map.ofEntries(
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_ACROBATICS, actorSkill.acrobatics, actorSkill.acrobaticsFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_ATHLETICS, actorSkill.athletics, actorSkill.athleticsFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_BRUTALFIGHTING, actorSkill.brutalFighting, actorSkill.brutalFightingFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_FINESSEFIGHTING, actorSkill.finesseFighting, actorSkill.finesseFightingFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_MUSCULAR, actorSkill.muscular, actorSkill.muscularFlagged),
+
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_DRIVE, actorSkill.drive, actorSkill.driveFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_LONGARMS, actorSkill.longArms, actorSkill.longArmsFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_SLEIGHTOFHANDS, actorSkill.sleightOfHands, actorSkill.sleightOfHandsFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_SMALLARMS, actorSkill.smallArms, actorSkill.smallArmsFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_STEALTH, actorSkill.stealth, actorSkill.stealthFlagged),
+
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_CHARM, actorSkill.charm, actorSkill.charmFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_DECEPTION, actorSkill.deception, actorSkill.deceptionFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_INSIGHT, actorSkill.insight, actorSkill.insightFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_INTIMIDATE, actorSkill.intimidate, actorSkill.intimidateFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_PERSUADE, actorSkill.persuade, actorSkill.persuadeFlagged),
+
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_INVESTIGATE, actorSkill.investigate, actorSkill.investigateFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_KNOWLEDGE, actorSkill.knowledge, actorSkill.knowledgeFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_MEDICINE, actorSkill.medicine, actorSkill.medicineFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_SURVIVAL, actorSkill.survival, actorSkill.survivalFlagged),
+                Skill.MakeSkillEntry(Constants.KNOWN_ID_SKILL_TECHNICAL, actorSkill.technical, actorSkill.technicalFlagged)
+        );
     }
 
     public List<ActorListing> list() {
@@ -192,10 +194,10 @@ public class ActorView {
 
             ret.healthy_movement = new ActorMovement();
             ret.healthy_movement.crawl = 1;
-            ret.healthy_movement.combat = 8 + (ret.skills.acrobatics);
-            ret.healthy_movement.run = 8 + (ret.skills.athletics);
-            ret.healthy_movement.swim = Math.max(1, 2 + (ret.skills.athletics / 2));
-            ret.healthy_movement.travel = Math.max(1, 2 + (ret.skills.athletics / 2));
+            ret.healthy_movement.combat = 8 + (ret.getAcrobaticsRating());
+            ret.healthy_movement.run = 8 + (ret.getAthleticsRating());
+            ret.healthy_movement.swim = Math.max(1, 2 + (ret.getAthleticsRating() / 2));
+            ret.healthy_movement.travel = Math.max(1, 2 + (ret.getAthleticsRating() / 2));
 
             ret.half_movement = new ActorMovement();
             ret.half_movement.crawl = 1;
@@ -204,12 +206,12 @@ public class ActorView {
             ret.half_movement.swim = Math.round(ret.healthy_movement.swim / 2.f);
             ret.half_movement.travel = Math.round(ret.healthy_movement.travel / 2.f);
 
-            ret.initiative = ret.skills.sleightOfHands;
-            ret.brutalHit = ret.skills.brutalFighting;
-            ret.finesseHit = ret.skills.finesseFighting;
-            ret.meleeImpact = ret.skills.muscular;
-            ret.dodge = ret.skills.acrobatics;
-            ret.resistance = ret.skills.athletics;
+            ret.initiative = ret.getSleightOfHandsRating();
+            ret.brutalHit = ret.getBrutalFightingRating();
+            ret.finesseHit = ret.getFinesseFightingRating();
+            ret.meleeImpact = ret.getMuscularRating();
+            ret.dodge = ret.getAcrobaticsRating();
+            ret.resistance = ret.getAthleticsRating();
             ret.health = 4;
 
             return ret;
