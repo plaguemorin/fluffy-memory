@@ -89,7 +89,7 @@
 
         <div class="skills">
             <h2>Skills</h2>
-            <div th:replace="~{fragments/skills :: skill(${actor})}"></div>
+            <table class="table" th:replace="~{ fragments/skills :: skill(${actor}) }"></table>
         </div>
 
         <div class="log">

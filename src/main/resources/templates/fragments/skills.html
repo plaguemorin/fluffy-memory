@@ -8,16 +8,16 @@
 
 
 <table>
-<tr th:fragment="skillrow(actorid, type, level, skill)">
-    <th scope="row" th:text="${type}">NAME</th>
-    <td th:text="${level}">0</td>
-    <td th:text="${skill}">0</td>
+<tr th:fragment="skillrow(actorid, skill)">
+    <th th:text="#{${'skill_' + skill.getId().toString().toLowerCase()}}">Skill Name</th>
+    <td th:text="${skill.getLevel()}">0</td>
+    <td th:text="${skill.getRating()}">0</td>
     <td th:with="did='dialog_' + ${#strings.randomAlphanumeric(10)}">
         <button class="btn btn-primary"
                 type="button"
-                data-bs-toggle="modal"
+                data-an-toggle="remoteModal"
                 th:id="${did}"
-                th:href="'/actor/' + ${actorid} + '/roll/' + ${type} + '/'"
+                th:href="'/actor/' + ${actorid} + '/roll/' + ${skill.getId()} + '/'"
                 data-bs-target="#roll">Roll!</button>
     </td>
 </tr>
@@ -30,23 +30,19 @@
         </div>
     </div>
 
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="rollresults">
+        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+            <div class="modal-content"></div>
+        </div>
+    </div>
+
     <script>
-        document.getElementById('roll').addEventListener('show.bs.modal', event => {
-            const buttonElement = event.relatedTarget;
-            const url = buttonElement.getAttribute('href');
-
-            const modalData = document
-                .getElementById('roll')
-                .querySelector('div.modal-content');
-
-            fetch(url)
-                .then(res => res.text())
-                .then(html => {
-                    modalData.innerHTML = html;
-                });
+        document.getElementById('roll').addEventListener('hide.bs.modal', event => {
+            event.target.querySelector("div[class='modal-content']")
+                .innerHTML = '';
         });
 
-        document.getElementById('roll').addEventListener('hide.bs.modal', event => {
+        document.getElementById('rollresults').addEventListener('hide.bs.modal', event => {
             event.target.querySelector("div[class='modal-content']")
                 .innerHTML = '';
         });
@@ -63,7 +59,32 @@
         </thead>
 
         <tbody>
-        <tr><th colspan="4" class="text-center" th:text="#{}">Physical</th></tr>
+        <tr><th colspan="4" class="text-center" th:text="#{skills.sections.action}">Action</th></tr>
+        <tr th:each="skill : ${actor.skills.getActionSkills()}"
+            th:insert="~{ :: skillrow(${actor.id}, ${skill})}">
+        </tr>
+
+        <tr><th colspan="4" class="text-center" th:text="#{skills.sections.mental}">Mental</th></tr>
+        <tr th:each="skill : ${actor.skills.getMentalSkills()}"
+            th:insert="~{ :: skillrow(${actor.id}, ${skill})}">
+        </tr>
+
+        <tr><th colspan="4" class="text-center" th:text="#{skills.sections.physical}">Physical</th></tr>
+        <tr th:each="skill : ${actor.skills.getPhysicalSkills()}"
+            th:insert="~{ :: skillrow(${actor.id}, ${skill})}">
+        </tr>
+
+        <tr><th colspan="4" class="text-center" th:text="#{skills.sections.social}">Social</th></tr>
+        <tr th:each="skill : ${actor.skills.getSocialSkills()}"
+            th:insert="~{ :: skillrow(${actor.id}, ${skill})}">
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<!--
+
+        <tr><th colspan="4" class="text-center" th:text="#{skills.sections.physical}">Physical</th></tr>
         <tr th:replace="~{ :: skillrow(${actor.id}, 'Acrobatics', ${levels.acrobatics}, ${skill.acrobatics})}"></tr>
         <tr th:replace="~{ :: skillrow(${actor.id}, 'Athletics', ${levels.athletics}, ${skill.athletics})}"></tr>
         <tr th:replace="~{ :: skillrow(${actor.id}, 'Brutal Fighting', ${levels.brutalFighting}, ${skill.brutalFighting})}"></tr>
@@ -91,9 +112,7 @@
         <tr th:replace="~{ :: skillrow(${actor.id}, 'Survival', ${levels.survival}, ${skill.survival})}"></tr>
         <tr th:replace="~{ :: skillrow(${actor.id}, 'Technical', ${levels.technical}, ${skill.technical})}"></tr>
 
-        </tbody>
-    </table>
-</div>
+-->
 
 </body>
 </html>
