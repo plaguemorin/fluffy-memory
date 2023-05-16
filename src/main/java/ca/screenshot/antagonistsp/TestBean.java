@@ -947,6 +947,8 @@ public class TestBean {
         alexTerrieur.addQuestLog("Adjustment", 10);
         alexTerrieur.addQuestLog("Modified Medicine, Knowledge, Stealth", -10);
         alexTerrieur.addQuestLog("Chapter 1 Done", 10);
+        alexTerrieur.addQuestLog("?", 5);
+        alexTerrieur.addQuestLog("?", 4);
 
         actorsRepository.save(alexTerrieur);
     }

@@ -24,31 +24,7 @@
 </table>
 
 <div th:fragment="skill(actor)">
-    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="roll">
-        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-            <div class="modal-content"></div>
-        </div>
-    </div>
-
-    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="rollresults">
-        <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-            <div class="modal-content"></div>
-        </div>
-    </div>
-
-    <script>
-        document.getElementById('roll').addEventListener('hide.bs.modal', event => {
-            event.target.querySelector("div[class='modal-content']")
-                .innerHTML = '';
-        });
-
-        document.getElementById('rollresults').addEventListener('hide.bs.modal', event => {
-            event.target.querySelector("div[class='modal-content']")
-                .innerHTML = '';
-        });
-    </script>
-
-    <table class="table">
+    <table class="table w-25">
         <thead>
         <tr class="table-header">
             <th scope="col">Skill</th>
