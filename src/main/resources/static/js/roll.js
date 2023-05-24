@@ -39,6 +39,11 @@ function rollDice(rating, id) {
     const critFailed = (value === 1) ? (Math.floor(Math.random() * 10) + 1) <= 5 : false;
     const success = value > 5;
 
+    const newModal = document.createElement('div');
+    newModal.setAttribute('class', 'modal fade');
+    newModal.setAttribute("role", "dialog");
+
+
     if (success) {
         if (critSuccess) {
             alert("Critical Success!");
